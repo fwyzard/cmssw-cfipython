@@ -1,13 +1,12 @@
 import FWCore.ParameterSet.Config as cms
 
 source = cms.Source('PoolSource',
-  fileNames = cms.untracked.vstring(),
   secondaryFileNames = cms.untracked.vstring(),
   needSecondaryFileNames = cms.untracked.bool(False),
   overrideCatalog = cms.untracked.string(''),
   processingMode = cms.untracked.string('RunsLumisAndEvents'),
   skipEvents = cms.untracked.uint32(0),
-  noEventSort = cms.untracked.bool(False),
+  noEventSort = cms.untracked.bool(True),
   skipBadFiles = cms.untracked.bool(False),
   cacheSize = cms.untracked.uint32(20971520),
   treeMaxVirtualSize = cms.untracked.int32(-1),
