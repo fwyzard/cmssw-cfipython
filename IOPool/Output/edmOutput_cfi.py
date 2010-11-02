@@ -12,10 +12,7 @@ edmOutput = cms.OutputModule('TimeoutPoolOutputModule',
   fastCloning = cms.untracked.bool(True),
   overrideInputFileSplitLevels = cms.untracked.bool(False),
   dropMetaData = cms.untracked.string(''),
-  dataset = cms.untracked.PSet(
-    dataTier = cms.untracked.string(''),
-    filterName = cms.untracked.string('')
-  ),
+  dataset = cms.untracked.PSet(),
   outputCommands = cms.untracked.vstring('keep *'),
   SelectEvents = cms.untracked.PSet()
 )
