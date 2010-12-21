@@ -7,5 +7,6 @@ source = cms.Source('EmptySource',
   firstEvent = cms.untracked.uint32(1),
   firstLuminosityBlock = cms.untracked.uint32(1),
   firstRun = cms.untracked.uint32(1),
-  processingMode = cms.untracked.string('RunsLumisAndEvents')
+  processingMode = cms.untracked.string('RunsLumisAndEvents'),
+  writeStatusFile = cms.untracked.bool(False)
 )
