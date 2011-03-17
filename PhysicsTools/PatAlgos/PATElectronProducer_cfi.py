@@ -2,6 +2,7 @@ import FWCore.ParameterSet.Config as cms
 
 PATElectronProducer = cms.EDProducer('PATElectronProducer',
   electronSource = cms.InputTag('no default'),
+  embedGsfElectronCore = cms.bool(True),
   embedGsfTrack = cms.bool(True),
   embedSuperCluster = cms.bool(True),
   embedTrack = cms.bool(False),
