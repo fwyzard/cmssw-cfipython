@@ -2,7 +2,7 @@ import FWCore.ParameterSet.Config as cms
 
 hltMhtHtFilter = cms.EDFilter('HLTMhtHtFilter',
   inputJetTag = cms.InputTag('hltMCJetCorJetIcone5HF07'),
-  saveTag = cms.untracked.bool(False),
+  saveTags = cms.bool(False),
   minMht = cms.double(0),
   minPtJet = cms.vdouble(
     20,
