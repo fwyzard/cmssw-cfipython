@@ -7,7 +7,7 @@ JetCorrFactorsProducer = cms.EDProducer('JetCorrFactorsProducer',
   payload = cms.string('AK5Calo'),
   useNPV = cms.bool(True),
   primaryVertices = cms.InputTag('offlinePrimaryVertices'),
-  useRho = cms.bool(True),
+  useRho = cms.bool(False),
   rho = cms.InputTag('kt6PFJets', 'rho'),
   levels = cms.vstring(
     'L1Offset',
