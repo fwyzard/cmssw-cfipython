@@ -22,5 +22,6 @@ hltMuonDimuonL3Filter = cms.EDFilter('HLTMuonDimuonL3Filter',
   NSigmaPt = cms.double(0),
   saveTags = cms.bool(False),
   MaxDCAMuMu = cms.double(99999.9),
-  MaxRapidityPair = cms.double(999999)
+  MaxRapidityPair = cms.double(999999),
+  CutCowboys = cms.bool(False)
 )

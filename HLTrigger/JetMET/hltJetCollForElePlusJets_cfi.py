@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-hltJetCollectionForElePlusJets = cms.EDProducer('HLTJetCollForElePlusJets',
+hltJetCollForElePlusJets = cms.EDProducer('HLTJetCollForElePlusJets',
   HltElectronTag = cms.InputTag('triggerFilterObjectWithRefs'),
   SourceJetTag = cms.InputTag('caloJetCollection'),
   MinJetPt = cms.double(30),
