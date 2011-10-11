@@ -2,6 +2,7 @@ import FWCore.ParameterSet.Config as cms
 
 hltHtMhtProducer = cms.EDProducer('HLTHtMhtProducer',
   jetsLabel = cms.InputTag('hltCaloJetCorrected'),
+  usePt = cms.bool(True),
   minNJetHt = cms.int32(0),
   minNJetMht = cms.int32(0),
   minPtJetHt = cms.double(40),
