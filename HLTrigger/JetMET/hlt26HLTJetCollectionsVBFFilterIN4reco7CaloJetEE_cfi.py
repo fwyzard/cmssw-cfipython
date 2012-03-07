@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-hltJetCollectionsVBFFilter = cms.EDFilter('HLTJetCollectionsVBFFilter',
+hlt26HLTJetCollectionsVBFFilterIN4reco7CaloJetEE = cms.EDFilter('HLTCaloJetCollectionsVBFFilter',
   inputTag = cms.InputTag('hltIterativeCone5CaloJets'),
   originalTag = cms.InputTag('hltIterativeCone5CaloJets'),
   saveTags = cms.bool(False),
@@ -10,5 +10,6 @@ hltJetCollectionsVBFFilter = cms.EDFilter('HLTJetCollectionsVBFFilter',
   ThirdJetPt = cms.double(20),
   MaxAbsJetEta = cms.double(9999),
   MaxAbsThirdJetEta = cms.double(2.6),
-  MinNJets = cms.uint32(2)
+  MinNJets = cms.uint32(2),
+  TriggerType = cms.int32(85)
 )

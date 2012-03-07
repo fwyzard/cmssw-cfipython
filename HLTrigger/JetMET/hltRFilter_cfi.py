@@ -3,6 +3,7 @@ import FWCore.ParameterSet.Config as cms
 hltRFilter = cms.EDFilter('HLTRFilter',
   inputTag = cms.InputTag('hltRHemisphere'),
   inputMetTag = cms.InputTag('hltMet'),
+  doMuonCorrection = cms.bool(False),
   minR = cms.double(0.3),
   minMR = cms.double(100),
   doRPrime = cms.bool(False),

@@ -8,5 +8,6 @@ PrescaleService = cms.Service('PrescaleService',
       prescales = cms.vuint32(1)
     )
   ),
-  lvl1DefaultLabel = cms.untracked.string('default')
+  lvl1DefaultLabel = cms.string('default'),
+  forceDefault = cms.bool(False)
 )

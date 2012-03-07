@@ -10,5 +10,7 @@ hltHtMhtProducer = cms.EDProducer('HLTHtMhtProducer',
   maxEtaJetHt = cms.double(3),
   maxEtaJetMht = cms.double(999),
   useTracks = cms.bool(False),
-  tracksLabel = cms.InputTag('hltL3Muons')
+  tracksLabel = cms.InputTag('hltL3Muons'),
+  excludePFMuons = cms.bool(False),
+  pfCandidatesLabel = cms.InputTag('hltParticleFlow')
 )

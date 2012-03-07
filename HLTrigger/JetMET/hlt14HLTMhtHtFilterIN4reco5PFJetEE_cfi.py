@@ -1,8 +1,8 @@
 import FWCore.ParameterSet.Config as cms
 
-hltMhtHtFilter = cms.EDFilter('HLTMhtHtFilter',
-  inputJetTag = cms.InputTag('hltMCJetCorJetIcone5HF07'),
+hlt14HLTMhtHtFilterIN4reco5PFJetEE = cms.EDFilter('HLTPFMhtHtFilter',
   saveTags = cms.bool(False),
+  inputJetTag = cms.InputTag('hltMCJetCorJetIcone5HF07'),
   minMht = cms.double(0),
   minPtJet = cms.vdouble(
     20,
@@ -21,5 +21,6 @@ hltMhtHtFilter = cms.EDFilter('HLTMhtHtFilter',
   minHt = cms.double(0),
   minAlphaT = cms.double(0),
   useTracks = cms.bool(False),
-  inputTracksTag = cms.InputTag('hltL3Mouns')
+  inputTracksTag = cms.InputTag('hltL3Mouns'),
+  triggerType = cms.int32(85)
 )

@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 RandomNumberGeneratorService = cms.Service('RandomNumberGeneratorService',
-  restoreStateLabel = cms.untracked.string(''),
+  restoreStateTag = cms.untracked.InputTag(''),
   saveFileName = cms.untracked.string(''),
   restoreFileName = cms.untracked.string(''),
   enableChecking = cms.untracked.bool(False),
