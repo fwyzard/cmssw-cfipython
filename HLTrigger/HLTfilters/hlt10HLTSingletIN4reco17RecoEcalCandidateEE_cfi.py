@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-hlt10HLTSingletIN4reco17RecoEcalCandidateEE = cms.EDFilter('HLT1Cluster',
+hlt10HLTSingletIN4reco17RecoEcalCandidateEE = cms.EDFilter('HLT1Photon',
   saveTags = cms.bool(False),
   inputTag = cms.InputTag('hltCollection'),
   triggerType = cms.int32(0),
