@@ -10,6 +10,5 @@ hlt12HLTDoubletDZIN4reco8ElectronENS0_20RecoChargedCandidateEE = cms.EDFilter('H
   triggerType2 = cms.int32(0),
   MinDR = cms.double(-1),
   MaxDZ = cms.double(0.2),
-  checkSC = cms.bool(False),
   MinN = cms.int32(1)
 )
