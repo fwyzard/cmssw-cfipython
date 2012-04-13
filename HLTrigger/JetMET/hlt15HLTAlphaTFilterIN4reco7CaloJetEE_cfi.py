@@ -13,7 +13,6 @@ hlt15HLTAlphaTFilterIN4reco7CaloJetEE = cms.EDFilter('HLTAlphaTCaloJetFilter',
     9999,
     9999
   ),
-  maxNJets = cms.uint32(32),
   minHt = cms.double(0),
   minAlphaT = cms.double(0),
   triggerType = cms.int32(85)
