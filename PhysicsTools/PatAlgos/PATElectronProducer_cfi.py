@@ -1,6 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 PATElectronProducer = cms.EDProducer('PATElectronProducer',
+  pfCandidateMap = cms.InputTag('no default'),
   electronSource = cms.InputTag('no default'),
   embedGsfElectronCore = cms.bool(True),
   embedGsfTrack = cms.bool(True),
@@ -16,6 +17,7 @@ PATElectronProducer = cms.EDProducer('PATElectronProducer',
   electronIDSource = cms.InputTag(''),
   isoDeposits = cms.PSet(),
   isolationValues = cms.PSet(),
+  isolationValuesNoPFId = cms.PSet(),
   efficiencies = cms.PSet(),
   addEfficiencies = cms.bool(False),
   userData = cms.PSet(
