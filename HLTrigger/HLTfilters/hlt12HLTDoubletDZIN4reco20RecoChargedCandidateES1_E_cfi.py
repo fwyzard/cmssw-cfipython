@@ -10,5 +10,6 @@ hlt12HLTDoubletDZIN4reco20RecoChargedCandidateES1_E = cms.EDFilter('HLT2MuonMuon
   triggerType2 = cms.int32(0),
   MinDR = cms.double(-1),
   MaxDZ = cms.double(0.2),
+  checkSC = cms.bool(False),
   MinN = cms.int32(1)
 )
