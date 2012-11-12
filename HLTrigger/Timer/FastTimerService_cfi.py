@@ -15,13 +15,24 @@ FastTimerService = cms.Service('FastTimerService',
   enableDQMbyPathCounters = cms.untracked.bool(True),
   enableDQMbyPathExclusive = cms.untracked.bool(False),
   enableDQMbyModule = cms.untracked.bool(False),
-  enableDQMbyLumi = cms.untracked.bool(False),
+  enableDQMSummary = cms.untracked.bool(False),
+  enableDQMbyLuminosity = cms.untracked.bool(False),
+  enableDQMbyLumiSection = cms.untracked.bool(False),
+  enableDQMbyProcesses = cms.untracked.bool(False),
   dqmTimeRange = cms.untracked.double(1000),
   dqmTimeResolution = cms.untracked.double(5),
   dqmPathTimeRange = cms.untracked.double(100),
   dqmPathTimeResolution = cms.untracked.double(0.5),
   dqmModuleTimeRange = cms.untracked.double(40),
   dqmModuleTimeResolution = cms.untracked.double(0.2),
+  dqmLuminosityRange = cms.untracked.double(1e+34),
+  dqmLuminosityResolution = cms.untracked.double(1e+31),
   dqmLumiSectionsRange = cms.untracked.uint32(2500),
-  dqmPath = cms.untracked.string('HLT/TimerService')
+  dqmPath = cms.untracked.string('HLT/TimerService'),
+  luminosityProduct = cms.untracked.InputTag('hltScalersRawToDigi'),
+  supportedProcesses = cms.untracked.vuint32(
+    8,
+    24,
+    32
+  )
 )
