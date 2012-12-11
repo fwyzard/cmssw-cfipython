@@ -9,6 +9,7 @@ JetCorrFactorsProducer = cms.EDProducer('JetCorrFactorsProducer',
   primaryVertices = cms.InputTag('offlinePrimaryVertices'),
   useRho = cms.bool(True),
   rho = cms.InputTag('kt6PFJets', 'rho'),
+  extraJPTOffset = cms.string('L1Offset'),
   levels = cms.vstring(
     'L1Offset',
     'L2Relative',

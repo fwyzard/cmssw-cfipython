@@ -2,7 +2,7 @@ import FWCore.ParameterSet.Config as cms
 
 PATJetProducer = cms.EDProducer('PATJetProducer',
   jetSource = cms.InputTag('no default'),
-  embedCaloTowers = cms.bool(True),
+  embedCaloTowers = cms.bool(False),
   embedPFCandidates = cms.bool(True),
   addGenPartonMatch = cms.bool(True),
   embedGenPartonMatch = cms.bool(False),
