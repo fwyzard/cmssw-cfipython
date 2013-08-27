@@ -1,6 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltDiMuonGlbTrkFilter = cms.EDFilter('HLTDiMuonGlbTrkFilter',
+  saveTags = cms.bool(False),
   inputMuonCollection = cms.InputTag(''),
   inputCandCollection = cms.InputTag(''),
   minTrkHits = cms.int32(-1),
@@ -12,6 +13,5 @@ hltDiMuonGlbTrkFilter = cms.EDFilter('HLTDiMuonGlbTrkFilter',
   trkMuonId = cms.uint32(0),
   minPtMuon1 = cms.double(17),
   minPtMuon2 = cms.double(8),
-  minMass = cms.double(1),
-  saveTags = cms.bool(True)
+  minMass = cms.double(1)
 )
