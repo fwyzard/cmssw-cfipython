@@ -1,6 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltMuonTrimuonL3Filter = cms.EDFilter('HLTMuonTrimuonL3Filter',
+  saveTags = cms.bool(False),
   BeamSpotTag = cms.InputTag('hltOfflineBeamSpot'),
   CandTag = cms.InputTag('hltL3MuonCandidates'),
   PreviousCandTag = cms.InputTag(''),
@@ -20,7 +21,6 @@ hltMuonTrimuonL3Filter = cms.EDFilter('HLTMuonTrimuonL3Filter',
   MinPtBalance = cms.double(-1),
   MaxPtBalance = cms.double(999999),
   NSigmaPt = cms.double(0),
-  saveTags = cms.bool(False),
   MaxDCAMuMu = cms.double(99999.9),
   MaxRapidityTriplet = cms.double(999999)
 )
