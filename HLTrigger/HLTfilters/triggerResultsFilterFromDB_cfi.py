@@ -1,7 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
 triggerResultsFilterFromDB = cms.EDFilter('TriggerResultsFilterFromDB',
-  saveTags = cms.bool(False),
   hltResults = cms.InputTag('TriggerResults'),
   l1tResults = cms.InputTag('hltGtDigis'),
   l1tIgnoreMask = cms.bool(False),
