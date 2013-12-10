@@ -1,6 +1,11 @@
 import FWCore.ParameterSet.Config as cms
 
 hltEgammaHLTRechitInRegionsProducer = cms.EDProducer('EgammaHLTRechitInRegionsProducer',
+  ecalhitLabels = cms.VInputTag(
+    'hltEcalRegionalEgammaRecHit:EcalRecHitsEB',
+    'hltEcalRegionalEgammaRecHit:EcalRecHitsEE',
+    'hltESRegionalEgammaRecHit:EcalRecHitsES'
+  ),
   ecalhitproducer = cms.InputTag('ecalRecHit'),
   l1TagIsolated = cms.InputTag('l1extraParticles', 'Isolated'),
   l1TagNonIsolated = cms.InputTag('l1extraParticles', 'NonIsolated'),
