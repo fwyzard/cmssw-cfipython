@@ -8,7 +8,7 @@ JetCorrFactorsProducer = cms.EDProducer('JetCorrFactorsProducer',
   useNPV = cms.bool(True),
   primaryVertices = cms.InputTag('offlinePrimaryVertices'),
   useRho = cms.bool(True),
-  rho = cms.InputTag('kt6PFJets', 'rho'),
+  rho = cms.InputTag('fixedGridRhoFastjetAllCalo'),
   extraJPTOffset = cms.string('L1Offset'),
   levels = cms.vstring(
     'L1Offset',

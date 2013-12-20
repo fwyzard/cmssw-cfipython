@@ -3,7 +3,7 @@ import FWCore.ParameterSet.Config as cms
 hltEgammaHLTHcalIsolationProducersRegional = cms.EDProducer('EgammaHLTHcalIsolationProducersRegional',
   recoEcalCandidateProducer = cms.InputTag('hltL1SeededRecoEcalCandidate'),
   hbheRecHitProducer = cms.InputTag('hltHbhereco'),
-  rhoProducer = cms.InputTag('hltKT6CaloJets', 'rho'),
+  rhoProducer = cms.InputTag('fixedGridRhoFastjetAllCalo'),
   doRhoCorrection = cms.bool(False),
   rhoMax = cms.double(99999999),
   rhoScale = cms.double(1),

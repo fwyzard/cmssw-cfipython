@@ -31,9 +31,5 @@ FastTimerService = cms.Service('FastTimerService',
   dqmLumiSectionsRange = cms.untracked.uint32(2500),
   dqmPath = cms.untracked.string('HLT/TimerService'),
   luminosityProduct = cms.untracked.InputTag('hltScalersRawToDigi'),
-  supportedProcesses = cms.untracked.vuint32(
-    8,
-    24,
-    32
-  )
+  supportedProcesses = cms.untracked.vuint32()
 )
