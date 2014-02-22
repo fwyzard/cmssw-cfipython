@@ -11,6 +11,7 @@ PATPhotonProducer = cms.EDProducer('PATPhotonProducer',
   addPhotonID = cms.bool(True),
   photonIDSource = cms.InputTag(''),
   isoDeposits = cms.PSet(),
+  isolationValues = cms.PSet(),
   efficiencies = cms.PSet(),
   addEfficiencies = cms.bool(False),
   userData = cms.PSet(

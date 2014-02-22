@@ -14,7 +14,7 @@ hltEgammaHLTRegionalPixelSeedGeneratorProducers = cms.EDProducer('EgammaHLTRegio
   TTRHBuilder = cms.string('WithTrackAngle'),
   OrderedHitsFactoryPSet = cms.PSet(
     ComponentName = cms.string('StandardHitPairGenerator'),
-    SeedingLayers = cms.string('hltESPPixelLayerPairs'),
+    SeedingLayers = cms.InputTag('hltESPPixelLayerPairs'),
     maxElement = cms.uint32(0)
   )
 )
