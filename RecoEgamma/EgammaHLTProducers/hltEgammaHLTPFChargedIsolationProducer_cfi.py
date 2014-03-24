@@ -1,9 +1,9 @@
 import FWCore.ParameterSet.Config as cms
 
 hltEgammaHLTPFChargedIsolationProducer = cms.EDProducer('EgammaHLTPFChargedIsolationProducer',
-  pfCandidatesProducer = cms.InputTag('hltParticleFlowReg'),
-  recoEcalCandidateProducer = cms.InputTag('hltL1SeededRecoEcalCandidatePF'),
   electronProducer = cms.InputTag('hltEle27WP80PixelMatchElectronsL1SeededPF'),
+  recoEcalCandidateProducer = cms.InputTag('hltL1SeededRecoEcalCandidatePF'),
+  pfCandidatesProducer = cms.InputTag('hltParticleFlowReg'),
   beamSpotProducer = cms.InputTag('hltOnlineBeamSpot'),
   useGsfTrack = cms.bool(False),
   useSCRefs = cms.bool(False),
