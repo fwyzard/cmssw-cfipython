@@ -5,5 +5,6 @@ RandomNumberGeneratorService = cms.Service('RandomNumberGeneratorService',
   saveFileName = cms.untracked.string(''),
   restoreFileName = cms.untracked.string(''),
   enableChecking = cms.untracked.bool(False),
-  eventSeedOffset = cms.untracked.uint32(0)
+  eventSeedOffset = cms.untracked.uint32(0),
+  verbose = cms.untracked.bool(False)
 )
