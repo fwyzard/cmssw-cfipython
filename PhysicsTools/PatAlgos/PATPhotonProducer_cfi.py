@@ -2,7 +2,13 @@ import FWCore.ParameterSet.Config as cms
 
 PATPhotonProducer = cms.EDProducer('PATPhotonProducer',
   photonSource = cms.InputTag('no default'),
+  reducedBarrelRecHitCollection = cms.InputTag('reducedEcalRecHitsEB'),
+  reducedEndcapRecHitCollection = cms.InputTag('reducedEcalRecHitsEE'),
   embedSuperCluster = cms.bool(True),
+  embedSeedCluster = cms.bool(True),
+  embedBasicClusters = cms.bool(True),
+  embedPreshowerClusters = cms.bool(True),
+  embedRecHits = cms.bool(True),
   addGenMatch = cms.bool(True),
   embedGenMatch = cms.bool(False),
   genParticleMatch = cms.InputTag(''),

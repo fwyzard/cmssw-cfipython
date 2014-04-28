@@ -9,5 +9,16 @@ hltElectronPixelMatchFilter = cms.EDFilter('HLTElectronPixelMatchFilter',
   ncandcut = cms.int32(1),
   doIsolated = cms.bool(True),
   L1IsoCand = cms.InputTag('hltL1IsoRecoEcalCandidate'),
-  L1NonIsoCand = cms.InputTag('hltL1NonIsoRecoEcalCandidate')
+  L1NonIsoCand = cms.InputTag('hltL1NonIsoRecoEcalCandidate'),
+  s_a_phi1B = cms.double(0.0069),
+  s_a_phi1I = cms.double(0.0088),
+  s_a_phi1F = cms.double(0.0076),
+  s_a_phi2B = cms.double(0.00037),
+  s_a_phi2I = cms.double(0.0007),
+  s_a_phi2F = cms.double(0.00906),
+  s_a_zB = cms.double(0.012),
+  s_a_rI = cms.double(0.027),
+  s_a_rF = cms.double(0.04),
+  s2_threshold = cms.double(0.4),
+  useS = cms.bool(False)
 )

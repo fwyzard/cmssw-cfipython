@@ -7,6 +7,5 @@ streamerOutput = cms.OutputModule('Stream',
   lumiSection_interval = cms.untracked.int32(0),
   outputCommands = cms.untracked.vstring('keep *'),
   SelectEvents = cms.untracked.PSet(),
-  fileName = cms.untracked.string('teststreamfile.dat'),
-  baseDir = cms.untracked.string('')
+  fileName = cms.untracked.string('teststreamfile.dat')
 )
