@@ -2,7 +2,7 @@ import FWCore.ParameterSet.Config as cms
 
 hltPixelVertexCollectionTrimmer = cms.EDProducer('PixelVertexCollectionTrimmer',
   src = cms.InputTag(''),
-  maxVtx = cms.int32(100),
+  maxVtx = cms.uint32(100),
   fractionSumPt2 = cms.double(0.3),
   minSumPt2 = cms.double(0),
   PVcomparer = cms.PSet(
