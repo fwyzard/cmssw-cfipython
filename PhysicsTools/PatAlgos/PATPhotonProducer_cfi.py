@@ -2,7 +2,6 @@ import FWCore.ParameterSet.Config as cms
 
 PATPhotonProducer = cms.EDProducer('PATPhotonProducer',
   photonSource = cms.InputTag('no default'),
-  electronSource = cms.InputTag('no default'),
   reducedBarrelRecHitCollection = cms.InputTag('reducedEcalRecHitsEB'),
   reducedEndcapRecHitCollection = cms.InputTag('reducedEcalRecHitsEE'),
   embedSuperCluster = cms.bool(True),
@@ -29,6 +28,5 @@ PATPhotonProducer = cms.EDProducer('PATPhotonProducer',
     userFunctions = cms.vstring(),
     userFunctionLabels = cms.vstring()
   ),
-  userIsolation = cms.PSet(),
-  beamLineSrc = cms.InputTag('')
+  userIsolation = cms.PSet()
 )
