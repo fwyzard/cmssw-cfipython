@@ -9,6 +9,7 @@ PATPhotonProducer = cms.EDProducer('PATPhotonProducer',
   embedBasicClusters = cms.bool(True),
   embedPreshowerClusters = cms.bool(True),
   embedRecHits = cms.bool(True),
+  electronSource = cms.InputTag('no default'),
   addGenMatch = cms.bool(True),
   embedGenMatch = cms.bool(False),
   genParticleMatch = cms.InputTag(''),
@@ -28,5 +29,6 @@ PATPhotonProducer = cms.EDProducer('PATPhotonProducer',
     userFunctions = cms.vstring(),
     userFunctionLabels = cms.vstring()
   ),
-  userIsolation = cms.PSet()
+  userIsolation = cms.PSet(),
+  beamLineSrc = cms.InputTag('')
 )
