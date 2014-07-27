@@ -13,5 +13,11 @@ hltDiMuonGlbTrkFilter = cms.EDFilter('HLTDiMuonGlbTrkFilter',
   trkMuonId = cms.uint32(0),
   minPtMuon1 = cms.double(17),
   minPtMuon2 = cms.double(8),
-  minMass = cms.double(1)
+  maxEtaMuon = cms.double(1e+99),
+  maxYDimuon = cms.double(1e+99),
+  minMass = cms.double(1),
+  maxMass = cms.double(1e+99),
+  ChargeOpt = cms.int32(0),
+  maxDCAMuMu = cms.double(1e+99),
+  maxdEtaMuMu = cms.double(1e+99)
 )
