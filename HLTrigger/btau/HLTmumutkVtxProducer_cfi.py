@@ -11,5 +11,6 @@ HLTmumutkVtxProducer = cms.EDProducer('HLTmumutkVtxProducer',
   MinInvMass = cms.double(0),
   MaxInvMass = cms.double(99999),
   MinD0Significance = cms.double(0),
+  OverlapDR = cms.double(0.000144),
   BeamSpotTag = cms.InputTag('hltOfflineBeamSpot')
 )
