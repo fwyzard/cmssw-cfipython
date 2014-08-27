@@ -3,6 +3,7 @@ import FWCore.ParameterSet.Config as cms
 cscPacker = cms.EDProducer('CSCDigiToRawModule',
   useFormatVersion = cms.uint32(2005),
   usePreTriggers = cms.bool(True),
+  packEverything = cms.bool(False),
   wireDigiTag = cms.InputTag('simMuonCSCDigis', 'MuonCSCWireDigi'),
   stripDigiTag = cms.InputTag('simMuonCSCDigis', 'MuonCSCStripDigi'),
   comparatorDigiTag = cms.InputTag('simMuonCSCDigis', 'MuonCSCComparatorDigi'),
