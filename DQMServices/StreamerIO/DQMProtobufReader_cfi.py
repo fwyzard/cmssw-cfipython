@@ -11,5 +11,7 @@ source = cms.Source('DQMProtobufReader',
   writeStatusFile = cms.untracked.bool(False),
   skipFirstLumis = cms.untracked.bool(False),
   deleteDatFiles = cms.untracked.bool(False),
-  endOfRunKills = cms.untracked.bool(False)
+  endOfRunKills = cms.untracked.bool(False),
+  datafnPosition = cms.untracked.uint32(3),
+  nextLumiTimeoutMillis = cms.untracked.int32(-1)
 )
