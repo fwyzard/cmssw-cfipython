@@ -34,5 +34,8 @@ fastPrimaryVertexWithWeightsProducer = cms.EDProducer('FastPrimaryVertexWithWeig
   weightCut_step2 = cms.double(0.05),
   zClusterWidth_step3 = cms.double(0.3),
   zClusterSearchArea_step3 = cms.double(0.55),
-  weightCut_step3 = cms.double(0.1)
+  weightCut_step3 = cms.double(0.1),
+  ptWeighting = cms.bool(False),
+  ptWeighting_slope = cms.double(0.05),
+  ptWeighting_offset = cms.double(-1)
 )
