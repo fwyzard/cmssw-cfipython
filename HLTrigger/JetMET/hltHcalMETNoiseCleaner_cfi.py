@@ -22,6 +22,7 @@ hltHcalMETNoiseCleaner = cms.EDFilter('HLTHcalMETNoiseCleaner',
   minRecHitE = cms.double(1.5),
   minLowHitE = cms.double(10),
   minHighHitE = cms.double(25),
+  minR45HitE = cms.double(5),
   TS4TS5EnergyThreshold = cms.double(50),
   TS4TS5UpperThreshold = cms.vdouble(
     70,

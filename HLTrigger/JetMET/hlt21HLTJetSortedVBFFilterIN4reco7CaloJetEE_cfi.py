@@ -7,7 +7,6 @@ hlt21HLTJetSortedVBFFilterIN4reco7CaloJetEE = cms.EDFilter('HLTCaloJetSortedVBFF
   Mqq = cms.double(200),
   Detaqq = cms.double(2.5),
   Detabb = cms.double(10),
-  Dphibb = cms.double(10),
   Ptsumqq = cms.double(0),
   Ptsumbb = cms.double(0),
   Etaq1Etaq2 = cms.double(40),

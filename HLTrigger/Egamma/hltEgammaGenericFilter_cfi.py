@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-hlt16HLTGenericFilterIN4reco17RecoEcalCandidateEE = cms.EDFilter('HLTEgammaGenericFilter',
+hltEgammaGenericFilter = cms.EDFilter('HLTEgammaGenericFilter',
   saveTags = cms.bool(False),
   candTag = cms.InputTag('hltSingleEgammaEtFilter'),
   isoTag = cms.InputTag('hltSingleEgammaHcalIsol'),

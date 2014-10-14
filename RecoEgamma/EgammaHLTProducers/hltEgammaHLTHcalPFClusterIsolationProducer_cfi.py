@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
-hlt33HLTHcalPFClusterIsolationProducerIN4reco20RecoChargedCandidateEE = cms.EDProducer('MuonHLTHcalPFClusterIsolationProducer',
-  recoCandidateProducer = cms.InputTag('hltL1SeededRecoEcalCandidatePF'),
+hltEgammaHLTHcalPFClusterIsolationProducer = cms.EDProducer('EgammaHLTHcalPFClusterIsolationProducer',
+  recoEcalCandidateProducer = cms.InputTag('hltL1SeededRecoEcalCandidatePF'),
   pfClusterProducerHCAL = cms.InputTag('hltParticleFlowClusterHCAL'),
   useHF = cms.bool(False),
   pfClusterProducerHFEM = cms.InputTag(''),
