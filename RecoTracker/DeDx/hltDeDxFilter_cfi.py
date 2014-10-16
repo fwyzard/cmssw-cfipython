@@ -6,6 +6,11 @@ hltDeDxFilter = cms.EDFilter('HLTDeDxFilter',
   minPT = cms.double(0),
   minNOM = cms.double(0),
   maxETA = cms.double(5.5),
+  minNumValidHits = cms.double(0),
+  maxNHitMissIn = cms.double(99),
+  maxNHitMissMid = cms.double(99),
+  maxRelTrkIsoDeltaRp3 = cms.double(-1),
+  relTrkIsoDeltaRSize = cms.double(0.3),
   inputTracksTag = cms.InputTag('hltL3Mouns'),
   inputDeDxTag = cms.InputTag('HLTdedxHarm2')
 )
