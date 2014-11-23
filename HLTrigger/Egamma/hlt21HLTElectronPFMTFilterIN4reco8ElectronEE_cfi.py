@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-hltElectronPFMTFilter = cms.EDFilter('HLTElectronPFMTFilter',
+hlt21HLTElectronPFMTFilterIN4reco8ElectronEE = cms.EDFilter('HLTGsfElectronPFMTFilter',
   saveTags = cms.bool(False),
   inputMetTag = cms.InputTag('hltPFMHT'),
   inputEleTag = cms.InputTag('hltEle25CaloIdVTTrkIdTCaloIsoTTrkIsoTTrackIsolFilter'),

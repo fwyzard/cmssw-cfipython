@@ -1,8 +1,11 @@
 import FWCore.ParameterSet.Config as cms
 
-hltEgammaHLTEcalPFClusterIsolationProducer = cms.EDProducer('EgammaHLTEcalPFClusterIsolationProducer',
+hlt33HLTHcalPFClusterIsolationProducerIN4reco17RecoEcalCandidateEE = cms.EDProducer('EgammaHLTHcalPFClusterIsolationProducer',
   recoEcalCandidateProducer = cms.InputTag('hltL1SeededRecoEcalCandidatePF'),
-  pfClusterProducer = cms.InputTag('hltParticleFlowClusterECAL'),
+  pfClusterProducerHCAL = cms.InputTag('hltParticleFlowClusterHCAL'),
+  useHF = cms.bool(False),
+  pfClusterProducerHFEM = cms.InputTag(''),
+  pfClusterProducerHFHAD = cms.InputTag(''),
   rhoProducer = cms.InputTag('fixedGridRhoFastjetAllCalo'),
   doRhoCorrection = cms.bool(False),
   rhoMax = cms.double(99999999),
