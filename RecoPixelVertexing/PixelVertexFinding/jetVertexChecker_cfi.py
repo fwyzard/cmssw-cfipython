@@ -10,5 +10,9 @@ jetVertexChecker = cms.EDFilter('JetVertexChecker',
   maxNjetsOutput = cms.int32(2),
   maxChi2 = cms.double(20),
   maxTrackPt = cms.double(20),
-  newMethod = cms.bool(False)
+  newMethod = cms.bool(False),
+  maxETA = cms.double(2.4),
+  pvErr_x = cms.double(0.0015),
+  pvErr_y = cms.double(0.0015),
+  pvErr_z = cms.double(1.5)
 )

@@ -13,6 +13,5 @@ hltMuonTrkFilter = cms.EDFilter('HLTMuonTrkFilter',
   requiredTypeMask = cms.uint32(0),
   trkMuonId = cms.uint32(0),
   minPt = cms.double(24),
-  minN = cms.uint32(1),
   maxAbsEta = cms.double(1e+99)
 )

@@ -17,6 +17,5 @@ hlt15HLTAlphaTFilterIN4reco7CaloJetEE = cms.EDFilter('HLTAlphaTCaloJetFilter',
   minHt = cms.double(0),
   minAlphaT = cms.double(0),
   triggerType = cms.int32(85),
-  dynamicAlphaT = cms.bool(True),
-  setDHtZero = cms.bool(False)
+  dynamicAlphaT = cms.bool(True)
 )
