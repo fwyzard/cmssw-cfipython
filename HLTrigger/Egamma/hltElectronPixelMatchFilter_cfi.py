@@ -23,5 +23,6 @@ hltElectronPixelMatchFilter = cms.EDFilter('HLTElectronPixelMatchFilter',
   tanhSO10BarrelThres = cms.double(0.35),
   tanhSO10InterThres = cms.double(1),
   tanhSO10ForwardThres = cms.double(1),
-  useS = cms.bool(False)
+  useS = cms.bool(False),
+  pixelVeto = cms.bool(False)
 )
