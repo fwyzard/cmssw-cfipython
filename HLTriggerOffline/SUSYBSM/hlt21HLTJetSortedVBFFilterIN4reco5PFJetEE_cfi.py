@@ -12,5 +12,6 @@ hlt21HLTJetSortedVBFFilterIN4reco5PFJetEE = cms.EDFilter('HLTPFJetSortedVBFFilte
   Ptsumbb = cms.double(0),
   Etaq1Etaq2 = cms.double(40),
   value = cms.string('second'),
-  triggerType = cms.int32(85)
+  triggerType = cms.int32(85),
+  njets = cms.int32(4)
 )
