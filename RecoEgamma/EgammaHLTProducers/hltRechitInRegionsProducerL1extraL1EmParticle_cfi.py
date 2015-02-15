@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-hltEgammaHLTRechitInRegionsProducer = cms.EDProducer('EgammaHLTRechitInRegionsProducer',
+hltRechitInRegionsProducerL1extraL1EmParticle = cms.EDProducer('EgammaHLTRechitInRegionsProducer',
   productLabels = cms.vstring(
     'EcalRegionalRecHitsEB',
     'EcalRegionalRecHitsEE'
