@@ -8,5 +8,15 @@ SeedGeneratorFromProtoTracksEDProducer = cms.EDProducer('SeedGeneratorFromProtoT
   useProtoTrackKinematics = cms.bool(False),
   useEventsWithNoVertex = cms.bool(True),
   TTRHBuilder = cms.string('TTRHBuilderWithoutAngle4PixelTriplets'),
-  usePV = cms.bool(False)
+  usePV = cms.bool(False),
+  SeedCreatorPSet = cms.PSet(
+    ComponentName = cms.string('SeedFromConsecutiveHitsCreator'),
+    propagator = cms.string('PropagatorWithMaterial'),
+    SeedMomentumForBOFF = cms.double(5),
+    OriginTransverseErrorMultiplier = cms.double(1),
+    MinOneOverPtError = cms.double(1),
+    magneticField = cms.string(''),
+    TTRHBuilder = cms.string('WithTrackAngle'),
+    forceKinematicWithRegionDirection = cms.bool(False)
+  )
 )

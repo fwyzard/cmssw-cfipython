@@ -62,7 +62,17 @@ ecalDrivenElectronSeeds = cms.EDProducer('ElectronSeedProducer',
     PhiMin2F = cms.double(-0.003),
     hOverEHFMinE = cms.double(0.8),
     DeltaPhi2B = cms.double(0.008),
-    PhiMin2B = cms.double(-0.002)
+    PhiMin2B = cms.double(-0.002),
+    SeedCreatorPSet = cms.PSet(
+      ComponentName = cms.string('SeedFromConsecutiveHitsCreator'),
+      propagator = cms.string('PropagatorWithMaterial'),
+      SeedMomentumForBOFF = cms.double(5),
+      OriginTransverseErrorMultiplier = cms.double(1),
+      MinOneOverPtError = cms.double(1),
+      magneticField = cms.string(''),
+      TTRHBuilder = cms.string('WithTrackAngle'),
+      forceKinematicWithRegionDirection = cms.bool(False)
+    )
   ),
   barrelSuperClusters = cms.InputTag('particleFlowSuperClusterECAL', 'particleFlowSuperClusterECALBarrel')
 )
