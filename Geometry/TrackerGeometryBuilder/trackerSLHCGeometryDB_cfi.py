@@ -6,7 +6,6 @@ trackerSLHCGeometryDB = cms.ESProducer('TrackerDigiGeometryESModule',
   applyAlignment = cms.bool(True),
   alignmentsLabel = cms.string(''),
   trackerGeometryConstants = cms.PSet(
-    upgradeGeometry = cms.bool(True),
     ROWS_PER_ROC = cms.int32(80),
     COLS_PER_ROC = cms.int32(52),
     BIG_PIX_PER_ROC_X = cms.int32(0),
