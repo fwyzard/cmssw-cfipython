@@ -13,5 +13,6 @@ hcalRawToDigi = cms.EDProducer('HcalRawToDigi',
   ComplainEmptyData = cms.untracked.bool(False),
   UnpackerMode = cms.untracked.int32(0),
   ExpectedOrbitMessageTime = cms.untracked.int32(-1),
-  InputLabel = cms.InputTag('rawDataCollector')
+  InputLabel = cms.InputTag('rawDataCollector'),
+  ElectronicsMap = cms.string('')
 )
