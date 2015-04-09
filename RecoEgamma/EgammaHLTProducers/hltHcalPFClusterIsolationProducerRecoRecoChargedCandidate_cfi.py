@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
-hlt33HLTHcalPFClusterIsolationProducerIN4reco17RecoEcalCandidateEE = cms.EDProducer('EgammaHLTHcalPFClusterIsolationProducer',
-  recoEcalCandidateProducer = cms.InputTag('hltL1SeededRecoEcalCandidatePF'),
+hltHcalPFClusterIsolationProducerRecoRecoChargedCandidate = cms.EDProducer('MuonHLTHcalPFClusterIsolationProducer',
+  recoCandidateProducer = cms.InputTag('hltL1SeededRecoEcalCandidatePF'),
   pfClusterProducerHCAL = cms.InputTag('hltParticleFlowClusterHCAL'),
   useHF = cms.bool(False),
   pfClusterProducerHFEM = cms.InputTag(''),
@@ -18,5 +18,6 @@ hlt33HLTHcalPFClusterIsolationProducerIN4reco17RecoEcalCandidateEE = cms.EDProdu
   etaStripBarrel = cms.double(0),
   etaStripEndcap = cms.double(0),
   energyBarrel = cms.double(0),
-  energyEndcap = cms.double(0)
+  energyEndcap = cms.double(0),
+  useEt = cms.bool(True)
 )

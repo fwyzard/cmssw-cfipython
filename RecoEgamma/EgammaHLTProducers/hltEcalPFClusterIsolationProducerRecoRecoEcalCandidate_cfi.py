@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-hlt33HLTEcalPFClusterIsolationProducerIN4reco17RecoEcalCandidateEE = cms.EDProducer('EgammaHLTEcalPFClusterIsolationProducer',
+hltEcalPFClusterIsolationProducerRecoRecoEcalCandidate = cms.EDProducer('EgammaHLTEcalPFClusterIsolationProducer',
   recoEcalCandidateProducer = cms.InputTag('hltL1SeededRecoEcalCandidatePF'),
   pfClusterProducer = cms.InputTag('hltParticleFlowClusterECAL'),
   rhoProducer = cms.InputTag('fixedGridRhoFastjetAllCalo'),
