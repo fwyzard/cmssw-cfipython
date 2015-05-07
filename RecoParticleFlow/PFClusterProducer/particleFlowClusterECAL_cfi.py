@@ -6,6 +6,7 @@ particleFlowClusterECAL = cms.EDProducer('CorrectedECALPFClusterProducer',
   energyCorrector = cms.PSet(
     applyCrackCorrections = cms.bool(False),
     applyMVACorrections = cms.bool(False),
+    maxPtForMVAEvaluation = cms.double(-99),
     algoName = cms.string('PFClusterEMEnergyCorrector'),
     recHitsEBLabel = cms.InputTag('ecalRecHit', 'EcalRecHitsEB'),
     recHitsEELabel = cms.InputTag('ecalRecHit', 'EcalRecHitsEE'),
