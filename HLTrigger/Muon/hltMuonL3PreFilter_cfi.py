@@ -19,5 +19,6 @@ hltMuonL3PreFilter = cms.EDFilter('HLTMuonL3PreFilter',
   MinDXYBeamSpot = cms.double(-1),
   MinNmuonHits = cms.int32(0),
   MaxPtDifference = cms.double(9999),
-  MinTrackPt = cms.double(0)
+  MinTrackPt = cms.double(0),
+  InputLinks = cms.InputTag('')
 )
