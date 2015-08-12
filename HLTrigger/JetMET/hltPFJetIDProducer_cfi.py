@@ -2,6 +2,7 @@ import FWCore.ParameterSet.Config as cms
 
 hltPFJetIDProducer = cms.EDProducer('HLTPFJetIDProducer',
   minPt = cms.double(20),
+  maxEta = cms.double(1e+99),
   CHF = cms.double(-99),
   NHF = cms.double(99),
   CEF = cms.double(99),
