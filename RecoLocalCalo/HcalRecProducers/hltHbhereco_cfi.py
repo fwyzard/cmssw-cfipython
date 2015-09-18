@@ -5,11 +5,15 @@ hltHbhereco = cms.EDProducer('HcalHitReconstructor',
   pedestalUpperLimit = cms.double(2.7),
   timeSlewParsType = cms.int32(3),
   timeSlewPars = cms.vdouble(
-    9.27638,
-    -2.05585,
-    9.27638,
-    -2.05585,
-    9.27638,
-    -2.05585
-  )
+    15.5,
+    -3.2,
+    32,
+    15.5,
+    -3.2,
+    32,
+    15.5,
+    -3.2,
+    32
+  ),
+  respCorrM3 = cms.double(0.95)
 )
