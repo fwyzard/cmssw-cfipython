@@ -38,8 +38,6 @@ L2MuonProducer = cms.EDProducer('L2MuonProducer',
       Propagator = cms.string('hltESPFastSteppingHelixPropagatorAny'),
       EnableGEMMeasurement = cms.bool(False),
       GEMRecSegmentLabel = cms.InputTag('gemRecHits'),
-      EnableME0Measurement = cms.bool(False),
-      ME0RecSegmentLabel = cms.InputTag('me0Segments'),
       EnableCSCMeasurement = cms.bool(True)
     ),
     NavigationType = cms.string('Standard'),
@@ -74,8 +72,6 @@ L2MuonProducer = cms.EDProducer('L2MuonProducer',
       Propagator = cms.string('hltESPFastSteppingHelixPropagatorAny'),
       EnableGEMMeasurement = cms.bool(False),
       GEMRecSegmentLabel = cms.InputTag('gemRecHits'),
-      EnableME0Measurement = cms.bool(False),
-      ME0RecSegmentLabel = cms.InputTag('me0Segments'),
       EnableCSCMeasurement = cms.bool(True)
     ),
     DoSeedRefit = cms.bool(False)
