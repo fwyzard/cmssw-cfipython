@@ -1,7 +1,8 @@
 import FWCore.ParameterSet.Config as cms
 
-saver = cms.EDAnalyzer('DQMFileSaverOnline',
-  backupLumiCount = cms.untracked.int32(10),
+saver = cms.EDAnalyzer('DQMFileSaverPB',
+  fakeFilterUnitMode = cms.untracked.bool(False),
+  streamLabel = cms.untracked.string('streamDQMHistograms'),
   tag = cms.untracked.string('UNKNOWN'),
   producer = cms.untracked.string('DQM'),
   referenceHandling = cms.untracked.string('all'),
