@@ -32,6 +32,11 @@ TrackCutClassifier = cms.EDProducer('TrackCutClassifier',
       3,
       3
     ),
+    minNdof = cms.vdouble(
+      -1,
+      -1,
+      -1
+    ),
     maxChi2 = cms.vdouble(
       9999,
       25,
@@ -42,15 +47,55 @@ TrackCutClassifier = cms.EDProducer('TrackCutClassifier',
       1,
       0.4
     ),
+    minNVtxTrk = cms.int32(2),
     maxDz = cms.vdouble(
       3.4028234663852886e+38,
       3.4028234663852886e+38,
       3.4028234663852886e+38
     ),
+    maxDzWrtBS = cms.vdouble(
+      3.4028234663852886e+38,
+      24,
+      15
+    ),
     maxDr = cms.vdouble(
       3.4028234663852886e+38,
       3.4028234663852886e+38,
       3.4028234663852886e+38
+    ),
+    dz_par = cms.PSet(
+      dz_par1 = cms.vdouble(
+        3.4028234663852886e+38,
+        3.4028234663852886e+38,
+        3.4028234663852886e+38
+      ),
+      dz_par2 = cms.vdouble(
+        3.4028234663852886e+38,
+        3.4028234663852886e+38,
+        3.4028234663852886e+38
+      )
+    ),
+    dr_par = cms.PSet(
+      dr_par1 = cms.vdouble(
+        3.4028234663852886e+38,
+        3.4028234663852886e+38,
+        3.4028234663852886e+38
+      ),
+      dr_par2 = cms.vdouble(
+        3.4028234663852886e+38,
+        3.4028234663852886e+38,
+        3.4028234663852886e+38
+      ),
+      d0err = cms.vdouble(
+        0.003,
+        0.003,
+        0.003
+      ),
+      d0err_par = cms.vdouble(
+        0.001,
+        0.001,
+        0.001
+      )
     )
   )
 )

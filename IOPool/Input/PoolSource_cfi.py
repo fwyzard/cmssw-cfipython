@@ -7,7 +7,6 @@ source = cms.Source('PoolSource',
   skipBadFiles = cms.untracked.bool(False),
   bypassVersionCheck = cms.untracked.bool(False),
   treeMaxVirtualSize = cms.untracked.int32(-1),
-  setRunNumber = cms.untracked.uint32(0),
   dropDescendantsOfDroppedBranches = cms.untracked.bool(True),
   labelRawDataLikeMC = cms.untracked.bool(True),
   inputCommands = cms.untracked.vstring('keep *'),
@@ -24,5 +23,6 @@ source = cms.Source('PoolSource',
   lumisToProcess = cms.untracked.VLuminosityBlockRange(),
   eventsToSkip = cms.untracked.VEventRange(),
   eventsToProcess = cms.untracked.VEventRange(),
-  duplicateCheckMode = cms.untracked.string('checkAllFilesOpened')
+  duplicateCheckMode = cms.untracked.string('checkAllFilesOpened'),
+  setRunNumber = cms.untracked.uint32(0)
 )
