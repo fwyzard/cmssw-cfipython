@@ -64,6 +64,11 @@ TrackCutClassifier = cms.EDProducer('TrackCutClassifier',
       3.4028234663852886e+38
     ),
     dz_par = cms.PSet(
+      dz_exp = cms.vint32(
+        2147483647,
+        2147483647,
+        2147483647
+      ),
       dz_par1 = cms.vdouble(
         3.4028234663852886e+38,
         3.4028234663852886e+38,
@@ -76,6 +81,11 @@ TrackCutClassifier = cms.EDProducer('TrackCutClassifier',
       )
     ),
     dr_par = cms.PSet(
+      dr_exp = cms.vint32(
+        2147483647,
+        2147483647,
+        2147483647
+      ),
       dr_par1 = cms.vdouble(
         3.4028234663852886e+38,
         3.4028234663852886e+38,

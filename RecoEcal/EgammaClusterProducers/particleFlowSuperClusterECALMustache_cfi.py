@@ -18,11 +18,15 @@ particleFlowSuperClusterECALMustache = cms.EDProducer('PFECALSuperClusterProduce
   useDynamicDPhiWindow = cms.bool(True),
   PFSuperClusterCollectionBarrel = cms.string('particleFlowSuperClusterECALBarrel'),
   regressionConfig = cms.PSet(
-    regressionKeyEE = cms.string('pfscecal_EECorrection_offline_v1'),
+    isHLT = cms.bool(False),
     ecalRecHitsEE = cms.InputTag('ecalRecHit', 'EcalRecHitsEE'),
     ecalRecHitsEB = cms.InputTag('ecalRecHit', 'EcalRecHitsEB'),
     regressionKeyEB = cms.string('pfscecal_EBCorrection_offline_v1'),
-    vertexCollection = cms.InputTag('offlinePrimaryVertices')
+    regressionKeyEE = cms.string('pfscecal_EECorrection_offline_v1'),
+    uncertaintyKeyEB = cms.string('pfscecal_EBUncertainty_offline_v1'),
+    uncertaintyKeyEE = cms.string('pfscecal_EEUncertainty_offline_v1'),
+    vertexCollection = cms.InputTag('offlinePrimaryVertices'),
+    etRecHitThreshold = cms.double(1)
   ),
   applyCrackCorrections = cms.bool(False),
   satelliteClusterSeedThreshold = cms.double(50),
