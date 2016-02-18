@@ -1,12 +1,13 @@
 import FWCore.ParameterSet.Config as cms
 
 l1tRawToDigi = cms.EDProducer('L1TRawToDigi',
-  FWId = cms.uint32(4294967295),
-  FWOverride = cms.bool(False),
-  CTP7 = cms.untracked.bool(False),
-  InputLabel = cms.InputTag('rawDataCollector'),
   FedIds = cms.vint32(),
   Setup = cms.string(''),
+  FWId = cms.uint32(0),
+  FWOverride = cms.bool(False),
+  CTP7 = cms.untracked.bool(False),
+  MTF7 = cms.untracked.bool(False),
+  InputLabel = cms.InputTag('rawDataCollector'),
   lenSlinkHeader = cms.untracked.int32(8),
   lenSlinkTrailer = cms.untracked.int32(8),
   lenAMCHeader = cms.untracked.int32(8),
