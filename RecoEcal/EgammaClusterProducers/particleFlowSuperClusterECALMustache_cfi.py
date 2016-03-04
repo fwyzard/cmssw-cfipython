@@ -26,7 +26,7 @@ particleFlowSuperClusterECALMustache = cms.EDProducer('PFECALSuperClusterProduce
     uncertaintyKeyEB = cms.string('pfscecal_EBUncertainty_offline_v1'),
     uncertaintyKeyEE = cms.string('pfscecal_EEUncertainty_offline_v1'),
     vertexCollection = cms.InputTag('offlinePrimaryVertices'),
-    etRecHitThreshold = cms.double(1)
+    eRecHitThreshold = cms.double(1)
   ),
   applyCrackCorrections = cms.bool(False),
   satelliteClusterSeedThreshold = cms.double(50),

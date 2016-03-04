@@ -7,5 +7,7 @@ source = cms.Source('FedRawDataInputSource',
   maxBufferedFiles = cms.untracked.uint32(2),
   verifyAdler32 = cms.untracked.bool(True),
   verifyChecksum = cms.untracked.bool(True),
-  useL1EventID = cms.untracked.bool(False)
+  useL1EventID = cms.untracked.bool(False),
+  fileListMode = cms.untracked.bool(False),
+  fileNames = cms.untracked.vstring()
 )
