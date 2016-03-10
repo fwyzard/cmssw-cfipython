@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltElectronMuonInvMassFilter = cms.EDFilter('HLTElectronMuonInvMassFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   elePrevCandTag = cms.InputTag('hltL1NonIsoHLTCaloIdTTrkIdVLSingleElectronEt8NoCandDphiFilter'),
   muonPrevCandTag = cms.InputTag('hltL1Mu0HTT50L3Filtered3'),
   lowerMassCut = cms.double(4),

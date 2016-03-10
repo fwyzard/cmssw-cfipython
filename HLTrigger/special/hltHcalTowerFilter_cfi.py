@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltHcalTowerFilter = cms.EDFilter('HLTHcalTowerFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   inputTag = cms.InputTag('hltTowerMakerForHcal'),
   MinE_HB = cms.double(1.5),
   MinE_HE = cms.double(2.5),

@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltExclDiJetFilterRecoPFJet = cms.EDFilter('HLTExclDiPFJetFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   inputJetTag = cms.InputTag('hltMCJetCorJetIcone5HF07'),
   caloTowerTag = cms.InputTag('hltTowerMakerForAll'),
   minPtJet = cms.double(30),

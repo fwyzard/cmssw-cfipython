@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 alCaHcalPhiSymStream = cms.EDFilter('HLTHcalPhiSymFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   HBHEHitCollection = cms.InputTag('hbhereco'),
   HOHitCollection = cms.InputTag('horeco'),
   HFHitCollection = cms.InputTag('hfreco'),

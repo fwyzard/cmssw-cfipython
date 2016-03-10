@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltAcoFilter = cms.EDFilter('HLTAcoFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   inputJetTag = cms.InputTag('IterativeCone5CaloJets'),
   inputMETTag = cms.InputTag('MET'),
   minDeltaPhi = cms.double(0),

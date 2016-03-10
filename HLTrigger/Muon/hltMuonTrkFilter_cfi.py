@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
-hltMuonTrkFilter = cms.EDFilter('HLTMuonTrkFilter',
-  saveTags = cms.bool(True),
+hltMuonTrkFilter = cms.EDFilter('HLTMuonTrkL1TFilter',
+  saveTags = cms.bool(False),
   inputMuonCollection = cms.InputTag(''),
   inputCandCollection = cms.InputTag(''),
   previousCandTag = cms.InputTag(''),

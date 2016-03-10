@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltCA8TopTagFilter = cms.EDFilter('HLTCATopTagFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   TopMass = cms.double(171),
   maxTopMass = cms.double(230),
   minTopMass = cms.double(140),

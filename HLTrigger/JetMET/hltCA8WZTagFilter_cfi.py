@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltCA8WZTagFilter = cms.EDFilter('HLTCAWZTagFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   maxWMass = cms.double(130),
   minWMass = cms.double(60),
   massdropcut = cms.double(0.4),

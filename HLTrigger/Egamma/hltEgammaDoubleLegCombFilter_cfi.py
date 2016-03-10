@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltEgammaDoubleLegCombFilter = cms.EDFilter('HLTEgammaDoubleLegCombFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   firstLegLastFilter = cms.InputTag('firstFilter'),
   secondLegLastFilter = cms.InputTag('secondFilter'),
   nrRequiredFirstLeg = cms.int32(0),

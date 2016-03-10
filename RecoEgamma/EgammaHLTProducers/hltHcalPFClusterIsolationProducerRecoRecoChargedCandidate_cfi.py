@@ -10,6 +10,8 @@ hltHcalPFClusterIsolationProducerRecoRecoChargedCandidate = cms.EDProducer('Muon
   doRhoCorrection = cms.bool(False),
   rhoMax = cms.double(99999999),
   rhoScale = cms.double(1),
+  effectiveAreaBarrel = cms.double(0.101),
+  effectiveAreaEndcap = cms.double(0.046),
   drMax = cms.double(0.3),
   drVetoBarrel = cms.double(0),
   drVetoEndcap = cms.double(0),
@@ -17,13 +19,5 @@ hltHcalPFClusterIsolationProducerRecoRecoChargedCandidate = cms.EDProducer('Muon
   etaStripEndcap = cms.double(0),
   energyBarrel = cms.double(0),
   energyEndcap = cms.double(0),
-  useEt = cms.bool(True),
-  effectiveAreas = cms.vdouble(
-    0.2,
-    0.25
-  ),
-  absEtaLowEdges = cms.vdouble(
-    0,
-    1.479
-  )
+  useEt = cms.bool(True)
 )

@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltVertexFilter = cms.EDFilter('HLTVertexFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   inputTag = cms.InputTag('hltPixelVertices'),
   minNDoF = cms.double(0),
   maxChi2 = cms.double(99999),

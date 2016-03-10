@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltMuonL1TRegionalFilter = cms.EDFilter('HLTMuonL1TRegionalFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   CandTag = cms.InputTag('hltGmtStage2Digis'),
   PreviousCandTag = cms.InputTag('hltL1sL1SingleMu20'),
   MinN = cms.int32(1),

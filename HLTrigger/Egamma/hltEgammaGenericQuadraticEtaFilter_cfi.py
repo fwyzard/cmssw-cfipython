@@ -1,9 +1,10 @@
 import FWCore.ParameterSet.Config as cms
 
 hltEgammaGenericQuadraticEtaFilter = cms.EDFilter('HLTEgammaGenericQuadraticEtaFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   candTag = cms.InputTag('hltEGIsolFilter'),
-  varTag = cms.InputTag('hltEGIsol'),
+  isoTag = cms.InputTag('hltEGIsol'),
+  nonIsoTag = cms.InputTag('hltEGNonIsol'),
   lessThan = cms.bool(True),
   useEt = cms.bool(True),
   etaBoundaryEB12 = cms.double(1),
@@ -21,5 +22,7 @@ hltEgammaGenericQuadraticEtaFilter = cms.EDFilter('HLTEgammaGenericQuadraticEtaF
   thrOverE2EB2 = cms.double(0),
   thrOverE2EE2 = cms.double(0),
   ncandcut = cms.int32(1),
-  l1EGCand = cms.InputTag('hltL1IsoRecoEcalCandidate')
+  doIsolated = cms.bool(False),
+  L1IsoCand = cms.InputTag('hltL1IsoRecoEcalCandidate'),
+  L1NonIsoCand = cms.InputTag('hltL1NonIsoRecoEcalCandidate')
 )

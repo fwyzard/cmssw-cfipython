@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltMuonL1RegionalFilter = cms.EDFilter('HLTMuonL1RegionalFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   CandTag = cms.InputTag('hltL1extraParticles'),
   PreviousCandTag = cms.InputTag('hltL1sL1SingleMu20'),
   MinN = cms.int32(1),

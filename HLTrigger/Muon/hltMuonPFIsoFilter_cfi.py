@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltMuonPFIsoFilter = cms.EDFilter('HLTMuonPFIsoFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   CandTag = cms.InputTag('hltL3MuonCandidates'),
   PreviousCandTag = cms.InputTag(''),
   DepTag = cms.VInputTag('hltMuPFIsoValueCharged03'),

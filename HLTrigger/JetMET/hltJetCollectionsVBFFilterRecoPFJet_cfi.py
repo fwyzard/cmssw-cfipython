@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltJetCollectionsVBFFilterRecoPFJet = cms.EDFilter('HLTPFJetCollectionsVBFFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   inputTag = cms.InputTag('hltIterativeCone5CaloJets'),
   originalTag = cms.InputTag('hltIterativeCone5CaloJets'),
   SoftJetPt = cms.double(25),

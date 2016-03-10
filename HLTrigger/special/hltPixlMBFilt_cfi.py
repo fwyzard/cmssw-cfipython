@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltPixlMBFilt = cms.EDFilter('HLTPixlMBFilt',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   pixlTag = cms.InputTag('hltPixelCands'),
   MinPt = cms.double(0),
   MinTrks = cms.uint32(2),

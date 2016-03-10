@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltJetVBFFilterRecoCaloJet = cms.EDFilter('HLTCaloJetVBFFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   inputTag = cms.InputTag('hltAntiKT5ConvPFJets'),
   minPtLow = cms.double(40),
   minPtHigh = cms.double(40),

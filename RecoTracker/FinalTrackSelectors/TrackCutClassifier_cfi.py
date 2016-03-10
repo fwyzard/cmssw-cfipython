@@ -12,17 +12,6 @@ TrackCutClassifier = cms.EDProducer('TrackCutClassifier',
     0.7
   ),
   mva = cms.PSet(
-    isHLT = cms.bool(False),
-    minHits4pass = cms.vint32(
-      2147483647,
-      2147483647,
-      2147483647
-    ),
-    minHits = cms.vint32(
-      0,
-      0,
-      1
-    ),
     minPixelHits = cms.vint32(
       0,
       0,
@@ -42,11 +31,6 @@ TrackCutClassifier = cms.EDProducer('TrackCutClassifier',
       99,
       3,
       3
-    ),
-    maxRelPtErr = cms.vdouble(
-      3.4028234663852886e+38,
-      3.4028234663852886e+38,
-      3.4028234663852886e+38
     ),
     minNdof = cms.vdouble(
       -1,
@@ -94,11 +78,6 @@ TrackCutClassifier = cms.EDProducer('TrackCutClassifier',
         3.4028234663852886e+38,
         3.4028234663852886e+38,
         3.4028234663852886e+38
-      ),
-      dzWPVerr_par = cms.vdouble(
-        3.4028234663852886e+38,
-        3.4028234663852886e+38,
-        3.4028234663852886e+38
       )
     ),
     dr_par = cms.PSet(
@@ -126,11 +105,6 @@ TrackCutClassifier = cms.EDProducer('TrackCutClassifier',
         0.001,
         0.001,
         0.001
-      ),
-      drWPVerr_par = cms.vdouble(
-        3.4028234663852886e+38,
-        3.4028234663852886e+38,
-        3.4028234663852886e+38
       )
     )
   )

@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltPFTauPairLeadTrackDzMatchFilter = cms.EDFilter('HLTPFTauPairLeadTrackDzMatchFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   tauSrc = cms.InputTag('hltPFTaus'),
   tauMinPt = cms.double(5),
   tauMaxEta = cms.double(2.5),

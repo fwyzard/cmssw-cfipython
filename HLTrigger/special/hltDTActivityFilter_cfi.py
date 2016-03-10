@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltDTActivityFilter = cms.EDFilter('HLTDTActivityFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   inputDCC = cms.InputTag('hltDTTFUnpacker'),
   inputDDU = cms.InputTag('hltMuonDTDigis'),
   inputRPC = cms.InputTag('hltGtDigis'),

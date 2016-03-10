@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltGlobalSumsRecoCaloMET = cms.EDFilter('HLTGlobalSumsCaloMET',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   inputTag = cms.InputTag('hltCollection'),
   triggerType = cms.int32(0),
   observable = cms.string(''),

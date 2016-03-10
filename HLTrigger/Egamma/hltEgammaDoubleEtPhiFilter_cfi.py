@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltEgammaDoubleEtPhiFilter = cms.EDFilter('HLTEgammaDoubleEtPhiFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   candTag = cms.InputTag('hltDoubleL1MatchFilter'),
   etcut1 = cms.double(6),
   etcut2 = cms.double(6),

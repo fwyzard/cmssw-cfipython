@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltFEDSizeFilter = cms.EDFilter('HLTFEDSizeFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   rawData = cms.InputTag('source'),
   threshold = cms.uint32(0),
   firstFED = cms.uint32(0),

@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltHtMhtFilter = cms.EDFilter('HLTHtMhtFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   htLabels = cms.VInputTag('hltHtMhtProducer'),
   mhtLabels = cms.VInputTag('hltHtMhtProducer'),
   minHt = cms.vdouble(250),

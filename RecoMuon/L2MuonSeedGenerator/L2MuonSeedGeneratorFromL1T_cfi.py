@@ -9,11 +9,6 @@ L2MuonSeedGeneratorFromL1T = cms.EDProducer('L2MuonSeedGeneratorFromL1T',
   L1MinQuality = cms.uint32(0),
   UseOfflineSeed = cms.untracked.bool(False),
   UseUnassociatedL1 = cms.bool(True),
-  MatchDR = cms.vdouble(0.3),
-  EtaMatchingBins = cms.vdouble(
-    0,
-    2.5
-  ),
   CentralBxOnly = cms.bool(True),
   OfflineSeedLabel = cms.untracked.InputTag(''),
   ServiceParameters = cms.PSet(

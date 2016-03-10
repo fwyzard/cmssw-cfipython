@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltSingletRecoPFJet = cms.EDFilter('HLT1PFJet',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   inputTag = cms.InputTag('hltCollection'),
   triggerType = cms.int32(0),
   MinE = cms.double(-1),

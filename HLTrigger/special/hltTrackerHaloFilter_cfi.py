@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltTrackerHaloFilter = cms.EDFilter('HLTTrackerHaloFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   inputTag = cms.InputTag('hltSiStripClusters'),
   MaxClustersTECp = cms.int32(50),
   MaxClustersTECm = cms.int32(50),

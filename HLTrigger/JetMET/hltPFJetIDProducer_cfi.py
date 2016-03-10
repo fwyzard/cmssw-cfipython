@@ -7,7 +7,6 @@ hltPFJetIDProducer = cms.EDProducer('HLTPFJetIDProducer',
   NHF = cms.double(99),
   CEF = cms.double(99),
   NEF = cms.double(99),
-  maxCF = cms.double(99),
   NCH = cms.int32(0),
   NTOT = cms.int32(0),
   jetsInput = cms.InputTag('hltAntiKT4PFJets')

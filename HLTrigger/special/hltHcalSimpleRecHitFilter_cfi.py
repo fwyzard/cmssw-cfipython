@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltHcalSimpleRecHitFilter = cms.EDFilter('HLTHcalSimpleRecHitFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   HFRecHitCollection = cms.InputTag('hltHfreco'),
   threshold = cms.double(3),
   minNHitsNeg = cms.int32(1),

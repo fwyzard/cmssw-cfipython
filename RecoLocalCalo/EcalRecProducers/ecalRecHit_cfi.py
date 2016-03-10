@@ -85,6 +85,5 @@ ecalRecHit = cms.EDProducer('EcalRecHitProducer',
   algo = cms.string('EcalRecHitWorkerSimple'),
   EELaserMAX = cms.double(8),
   logWarningEtThreshold_EB_FE = cms.double(50),
-  recoverEEIsolatedChannels = cms.bool(False),
-  skipTimeCalib = cms.bool(False)
+  recoverEEIsolatedChannels = cms.bool(False)
 )

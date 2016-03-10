@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltElectronOneOEMinusOneOPFilterRegional = cms.EDFilter('HLTElectronOneOEMinusOneOPFilterRegional',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   candTag = cms.InputTag('hltL1NonIsoHLTNonIsoSingleElectronEt15LTIPixelMatchFilter'),
   electronIsolatedProducer = cms.InputTag('hltPixelMatchElectronsL1Iso'),
   electronNonIsolatedProducer = cms.InputTag('hltPixelMatchElectronsL1NonIso'),

@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltCaloTowerFilter = cms.EDFilter('HLTCaloTowerFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   inputTag = cms.InputTag('hltTowerMakerForEcal'),
   MinPt = cms.double(3),
   MaxEta = cms.double(3),

@@ -1,12 +1,15 @@
 import FWCore.ParameterSet.Config as cms
 
 hltElectronPixelMatchFilter = cms.EDFilter('HLTElectronPixelMatchFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   candTag = cms.InputTag('hltEgammaHcalIsolFilter'),
-  l1PixelSeedsTag = cms.InputTag('electronPixelSeeds'),
+  L1IsoPixelSeedsTag = cms.InputTag('electronPixelSeeds'),
+  L1NonIsoPixelSeedsTag = cms.InputTag('electronPixelSeeds'),
   npixelmatchcut = cms.double(1),
   ncandcut = cms.int32(1),
-  l1EGCand = cms.InputTag('hltL1IsoRecoEcalCandidate'),
+  doIsolated = cms.bool(True),
+  L1IsoCand = cms.InputTag('hltL1IsoRecoEcalCandidate'),
+  L1NonIsoCand = cms.InputTag('hltL1NonIsoRecoEcalCandidate'),
   s_a_phi1B = cms.double(0.0069),
   s_a_phi1I = cms.double(0.0088),
   s_a_phi1F = cms.double(0.0076),

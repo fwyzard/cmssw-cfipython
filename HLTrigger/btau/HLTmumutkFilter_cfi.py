@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 HLTmumutkFilter = cms.EDFilter('HLTmumutkFilter',
-  saveTags = cms.bool(True),
+  saveTags = cms.bool(False),
   MaxEta = cms.double(2.5),
   MinPt = cms.double(0),
   MaxNormalisedChi2 = cms.double(10),
