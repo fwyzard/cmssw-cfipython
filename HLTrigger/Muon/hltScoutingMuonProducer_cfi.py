@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-scoutingMuonProducer = cms.EDProducer('HLTScoutingMuonProducer',
+hltScoutingMuonProducer = cms.EDProducer('HLTScoutingMuonProducer',
   ChargedCandidates = cms.InputTag('hltL3MuonCandidates'),
   Tracks = cms.InputTag('hltL3Muons'),
   EcalPFClusterIsoMap = cms.InputTag('hltMuonEcalPFClusterIsoForMuons'),

@@ -26,6 +26,22 @@ hltRecHitInAllL1RegionsProducerEcalUncalibratedRecHit = cms.EDProducer('HLTEcalU
       regionEtaMargin = cms.double(0.14),
       regionPhiMargin = cms.double(0.4),
       type = cms.string('L1EmParticle')
+    ),
+    cms.PSet(
+      inputColl = cms.InputTag('hltCaloStage2Digis'),
+      maxEt = cms.double(999),
+      minEt = cms.double(5),
+      regionEtaMargin = cms.double(0.4),
+      regionPhiMargin = cms.double(0.5),
+      type = cms.string('EGamma')
+    ),
+    cms.PSet(
+      inputColl = cms.InputTag('hltCaloStage2Digis'),
+      maxEt = cms.double(999),
+      minEt = cms.double(200),
+      regionEtaMargin = cms.double(0.4),
+      regionPhiMargin = cms.double(0.5),
+      type = cms.string('EGamma')
     )
   )
 )

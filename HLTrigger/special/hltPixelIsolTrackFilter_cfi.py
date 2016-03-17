@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-isolPixelTrackFilter = cms.EDFilter('HLTPixelIsolTrackFilter',
+hltPixelIsolTrackFilter = cms.EDFilter('HLTPixelIsolTrackFilter',
   saveTags = cms.bool(False),
   candTag = cms.InputTag('isolPixelTrackProd'),
   L1GTSeedLabel = cms.InputTag('hltL1sIsoTrack'),

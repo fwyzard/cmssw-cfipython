@@ -6,5 +6,7 @@ hltMuonL1TFilter = cms.EDFilter('HLTMuonL1TFilter',
   PreviousCandTag = cms.InputTag(''),
   MaxEta = cms.double(2.5),
   MinPt = cms.double(0),
-  MinN = cms.int32(1)
+  MinN = cms.int32(1),
+  CentralBxOnly = cms.bool(True),
+  SelectQualities = cms.vint32()
 )
