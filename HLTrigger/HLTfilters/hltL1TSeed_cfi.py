@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltL1TSeed = cms.EDFilter('HLTL1TSeed',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   L1SeedsLogicalExpression = cms.string(''),
   L1ObjectMapInputTag = cms.InputTag('hltGtStage2ObjectMap'),
   L1GlobalInputTag = cms.InputTag('hltGtStage2Digis'),
