@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltEgammaDoubleEtDeltaPhiFilter = cms.EDFilter('HLTEgammaDoubleEtDeltaPhiFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   inputTag = cms.InputTag('hltDoublePhotonEt5L1MatchFilterRegional'),
   L1IsoCand = cms.InputTag('hltL1IsoRecoEcalCandidate'),
   L1NonIsoCand = cms.InputTag('hltL1NonIsoRecoEcalCandidate'),

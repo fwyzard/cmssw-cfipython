@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltDisplacedmumumuFilter = cms.EDFilter('HLTDisplacedmumumuFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   FastAccept = cms.bool(False),
   MinLxySignificance = cms.double(0),
   MaxLxySignificance = cms.double(0),

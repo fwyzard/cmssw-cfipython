@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltJetSortedVBFFilterRecoPFJet = cms.EDFilter('HLTPFJetSortedVBFFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   inputJets = cms.InputTag('hltJetCollection'),
   inputJetTags = cms.InputTag(''),
   Mqq = cms.double(200),

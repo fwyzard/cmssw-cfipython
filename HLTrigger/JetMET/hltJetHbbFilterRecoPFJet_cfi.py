@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltJetHbbFilterRecoPFJet = cms.EDFilter('HLTPFJetHbbFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   inputJets = cms.InputTag('hltJetCollection'),
   inputJetTags = cms.InputTag(''),
   minMbb = cms.double(70),

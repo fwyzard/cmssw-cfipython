@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltCSCOverlapFilter = cms.EDFilter('HLTCSCOverlapFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   input = cms.InputTag('hltCsc2DRecHits'),
   minHits = cms.uint32(4),
   xWindow = cms.double(1000),

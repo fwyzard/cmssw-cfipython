@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltJetEtaTopologyFilterRecoCaloJet = cms.EDFilter('HLTCaloJetEtaTopologyFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   inputJetTag = cms.InputTag('hltIterativeCone5CaloJets'),
   minPtJet = cms.double(50),
   minJetEta = cms.double(-1),

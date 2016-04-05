@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltPFEnergyFractionsFilter = cms.EDFilter('HLTPFEnergyFractionsFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   inputPFJetTag = cms.InputTag('hltAntiKT5PFJets'),
   nJet = cms.uint32(1),
   min_CEEF = cms.double(-99),

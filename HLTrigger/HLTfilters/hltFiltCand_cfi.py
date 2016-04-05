@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltFiltCand = cms.EDFilter('HLTFiltCand',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   photTag = cms.InputTag('photCollection'),
   elecTag = cms.InputTag('elecCollection'),
   muonTag = cms.InputTag('muonCollection'),

@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltForwardBackwardJetsFilterRecoCaloJet = cms.EDFilter('HLTForwardBackwardCaloJetsFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   inputTag = cms.InputTag('hltIterativeCone5CaloJetsRegional'),
   minPt = cms.double(15),
   minEta = cms.double(3),

@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltDisplacedEgammaFilter = cms.EDFilter('HLTDisplacedEgammaFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   inputTag = cms.InputTag('hltEGRegionalL1SingleEG22'),
   L1IsoCand = cms.InputTag('hltL1IsoRecoEcalCandidate'),
   L1NonIsoCand = cms.InputTag('hltL1NonIsoRecoEcalCandidate'),

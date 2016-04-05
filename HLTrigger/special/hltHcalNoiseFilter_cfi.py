@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltHcalNoiseFilter = cms.EDFilter('HLTHcalNoiseFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   JetSource = cms.InputTag('iterativeCone5CaloJets'),
   MetSource = cms.InputTag('met'),
   TowerSource = cms.InputTag('towerMaker'),

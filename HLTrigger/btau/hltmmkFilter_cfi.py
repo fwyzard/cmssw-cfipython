@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltmmkFilter = cms.EDFilter('HLTmmkFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   MuCand = cms.InputTag('hltMuTracks'),
   TrackCand = cms.InputTag('hltMumukAllConeTracks'),
   ThirdTrackMass = cms.double(0.106),

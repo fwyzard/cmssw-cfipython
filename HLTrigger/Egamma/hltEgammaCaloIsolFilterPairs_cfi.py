@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltEgammaCaloIsolFilterPairs = cms.EDFilter('HLTEgammaCaloIsolFilterPairs',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   candTag = cms.InputTag(''),
   isoTag = cms.InputTag(''),
   nonIsoTag = cms.InputTag(''),

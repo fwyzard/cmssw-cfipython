@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltFatJetMassFilterRecoPFJet = cms.EDFilter('HLTFatPFJetMassFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   inputJetTag = cms.InputTag('hltCollection'),
   minMass = cms.double(0),
   fatJetDeltaR = cms.double(1.1),

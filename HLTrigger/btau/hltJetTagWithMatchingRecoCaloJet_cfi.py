@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltJetTagWithMatchingRecoCaloJet = cms.EDFilter('HLTCaloJetTagWithMatching',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   Jets = cms.InputTag('hltJetCollection'),
   JetTags = cms.InputTag('HLTJetTagWithMatchingCollection'),
   MinTag = cms.double(2),

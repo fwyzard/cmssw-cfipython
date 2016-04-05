@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltEgammaGenericQuadraticFilter = cms.EDFilter('HLTEgammaGenericQuadraticFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   candTag = cms.InputTag('hltSingleEgammaEtFilter'),
   isoTag = cms.InputTag('hltSingleEgammaHcalIsol'),
   nonIsoTag = cms.InputTag('hltSingleEgammaHcalNonIsol'),

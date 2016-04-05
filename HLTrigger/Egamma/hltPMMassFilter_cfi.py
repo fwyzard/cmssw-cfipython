@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltPMMassFilter = cms.EDFilter('HLTPMMassFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   candTag = cms.InputTag('hltL1NonIsoDoublePhotonEt5UpsHcalIsolFilter'),
   beamSpot = cms.InputTag('hltOfflineBeamSpot'),
   lowerMassCut = cms.double(8),

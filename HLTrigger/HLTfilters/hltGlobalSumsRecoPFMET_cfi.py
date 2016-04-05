@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltGlobalSumsRecoPFMET = cms.EDFilter('HLTGlobalSumsPFMET',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   inputTag = cms.InputTag('hltCollection'),
   triggerType = cms.int32(0),
   observable = cms.string(''),

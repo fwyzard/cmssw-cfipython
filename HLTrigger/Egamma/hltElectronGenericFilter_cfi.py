@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltElectronGenericFilter = cms.EDFilter('HLTElectronGenericFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   candTag = cms.InputTag('hltSingleElectronOneOEMinusOneOPFilter'),
   isoTag = cms.InputTag('hltSingleElectronTrackIsol'),
   nonIsoTag = cms.InputTag('hltSingleElectronHcalTrackIsol'),

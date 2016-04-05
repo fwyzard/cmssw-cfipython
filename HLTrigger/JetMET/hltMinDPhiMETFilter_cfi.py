@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltMinDPhiMETFilter = cms.EDFilter('HLTMinDPhiMETFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   usePt = cms.bool(True),
   triggerType = cms.int32(85),
   maxNJets = cms.int32(2),

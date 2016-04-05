@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltDoubletDZRecoRecoEcalCandidateRecoRecoEcalCandidate = cms.EDFilter('HLT2PhotonPhotonDZ',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   originTag1 = cms.VInputTag('hltOriginal1'),
   originTag2 = cms.VInputTag('hltOriginal2'),
   inputTag1 = cms.InputTag('hltFiltered1'),
