@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltSingletRecoRecoEcalCandidate = cms.EDFilter('HLT1Photon',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   inputTag = cms.InputTag('hltCollection'),
   triggerType = cms.int32(0),
   MinE = cms.double(-1),

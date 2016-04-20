@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltEgammaL1MatchFilterPairs = cms.EDFilter('HLTEgammaL1MatchFilterPairs',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   candIsolatedTag = cms.InputTag('hltRecoIsolatedEcalCandidate'),
   l1IsolatedTag = cms.InputTag('l1extraParticles', 'Isolated'),
   candNonIsolatedTag = cms.InputTag('hltRecoNonIsolatedEcalCandidate'),

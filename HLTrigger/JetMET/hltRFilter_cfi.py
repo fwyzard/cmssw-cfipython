@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltRFilter = cms.EDFilter('HLTRFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   inputTag = cms.InputTag('hltRHemisphere'),
   inputMetTag = cms.InputTag('hltMet'),
   doMuonCorrection = cms.bool(False),

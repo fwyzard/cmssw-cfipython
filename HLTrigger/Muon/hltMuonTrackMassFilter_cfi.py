@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltMuonTrackMassFilter = cms.EDFilter('HLTMuonTrackMassFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   BeamSpotTag = cms.InputTag('hltOfflineBeamSpot'),
   CandTag = cms.InputTag('hltL3MuonCandidates'),
   TrackTag = cms.InputTag(''),

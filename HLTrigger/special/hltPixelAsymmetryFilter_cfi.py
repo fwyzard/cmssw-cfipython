@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltPixelAsymmetryFilter = cms.EDFilter('HLTPixelAsymmetryFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   inputTag = cms.InputTag('hltSiPixelClusters'),
   MinAsym = cms.double(0),
   MaxAsym = cms.double(1),

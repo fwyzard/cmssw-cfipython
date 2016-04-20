@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltPixelClusterShapeFilter = cms.EDFilter('HLTPixelClusterShapeFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   inputTag = cms.InputTag('hltSiPixelRecHits'),
   minZ = cms.double(-20),
   maxZ = cms.double(20.05),

@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltGenericFilterRecoRecoChargedCandidate = cms.EDFilter('HLTMuonGenericFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   candTag = cms.InputTag('hltSingleEgammaEtFilter'),
   isoTag = cms.InputTag('hltSingleEgammaHcalIsol'),
   nonIsoTag = cms.InputTag('hltSingleEgammaHcalNonIsol'),

@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltJetPairDzMatchFilterRecoPFJet = cms.EDFilter('HLTPFJetPairDzMatchFilter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   JetSrc = cms.InputTag('hltMatchL2Tau30ToPixelTrk5'),
   JetMinPt = cms.double(25),
   JetMaxEta = cms.double(2.4),

@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 hltMuonDimuonL2Filter = cms.EDFilter('HLTMuonDimuonL2Filter',
-  saveTags = cms.bool(False),
+  saveTags = cms.bool(True),
   BeamSpotTag = cms.InputTag('hltOfflineBeamSpot'),
   CandTag = cms.InputTag('hltL2MuonCandidates'),
   PreviousCandTag = cms.InputTag(''),
