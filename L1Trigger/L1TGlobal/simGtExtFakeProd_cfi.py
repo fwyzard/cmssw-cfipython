@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-simGtExtFakeProd = cms.EDProducer('l1t::GtExternalFakeProducer',
+simGtExtFakeProd = cms.EDProducer('L1TExtCondProducer',
   setBptxMinus = cms.bool(True),
   setBptxAND = cms.bool(True),
   bxFirst = cms.int32(-2),
