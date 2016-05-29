@@ -3,9 +3,7 @@ import FWCore.ParameterSet.Config as cms
 hltEgammaDoubleEtDeltaPhiFilter = cms.EDFilter('HLTEgammaDoubleEtDeltaPhiFilter',
   saveTags = cms.bool(True),
   inputTag = cms.InputTag('hltDoublePhotonEt5L1MatchFilterRegional'),
-  L1IsoCand = cms.InputTag('hltL1IsoRecoEcalCandidate'),
-  L1NonIsoCand = cms.InputTag('hltL1NonIsoRecoEcalCandidate'),
-  relaxed = cms.untracked.bool(False),
+  l1EGCand = cms.InputTag('hltL1IsoRecoEcalCandidate'),
   etcut = cms.double(5),
   minDeltaPhi = cms.double(2.5)
 )

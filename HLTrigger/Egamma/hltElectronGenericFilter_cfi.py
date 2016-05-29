@@ -3,8 +3,7 @@ import FWCore.ParameterSet.Config as cms
 hltElectronGenericFilter = cms.EDFilter('HLTElectronGenericFilter',
   saveTags = cms.bool(True),
   candTag = cms.InputTag('hltSingleElectronOneOEMinusOneOPFilter'),
-  isoTag = cms.InputTag('hltSingleElectronTrackIsol'),
-  nonIsoTag = cms.InputTag('hltSingleElectronHcalTrackIsol'),
+  varTag = cms.InputTag('hltSingleElectronTrackIsol'),
   lessThan = cms.bool(True),
   thrRegularEB = cms.double(0),
   thrRegularEE = cms.double(0),
@@ -13,7 +12,5 @@ hltElectronGenericFilter = cms.EDFilter('HLTElectronGenericFilter',
   thrTimesPtEB = cms.double(-1),
   thrTimesPtEE = cms.double(-1),
   ncandcut = cms.int32(1),
-  doIsolated = cms.bool(True),
-  L1IsoCand = cms.InputTag('hltPixelMatchElectronsL1Iso'),
-  L1NonIsoCand = cms.InputTag('hltPixelMatchElectronsL1NonIso')
+  l1EGCand = cms.InputTag('hltPixelMatchElectronsL1Iso')
 )

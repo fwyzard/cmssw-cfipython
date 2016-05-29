@@ -14,5 +14,6 @@ l1tRawToDigi = cms.EDProducer('L1TRawToDigi',
   lenAMCTrailer = cms.untracked.int32(0),
   lenAMC13Header = cms.untracked.int32(8),
   lenAMC13Trailer = cms.untracked.int32(8),
-  debug = cms.untracked.bool(False)
+  debug = cms.untracked.bool(False),
+  MinFeds = cms.uint32(0)
 )
