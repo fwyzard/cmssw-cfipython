@@ -3,8 +3,7 @@ import FWCore.ParameterSet.Config as cms
 hltGenericFilterRecoRecoEcalCandidate = cms.EDFilter('HLTEgammaGenericFilter',
   saveTags = cms.bool(True),
   candTag = cms.InputTag('hltSingleEgammaEtFilter'),
-  isoTag = cms.InputTag('hltSingleEgammaHcalIsol'),
-  nonIsoTag = cms.InputTag('hltSingleEgammaHcalNonIsol'),
+  varTag = cms.InputTag('hltSingleEgammaHcalIsol'),
   lessThan = cms.bool(True),
   useEt = cms.bool(False),
   thrRegularEB = cms.double(0),
@@ -14,7 +13,5 @@ hltGenericFilterRecoRecoEcalCandidate = cms.EDFilter('HLTEgammaGenericFilter',
   thrOverE2EB = cms.double(-1),
   thrOverE2EE = cms.double(-1),
   ncandcut = cms.int32(1),
-  doIsolated = cms.bool(True),
-  L1IsoCand = cms.InputTag('hltL1IsoRecoEcalCandidate'),
-  L1NonIsoCand = cms.InputTag('hltL1NonIsoRecoEcalCandidate')
+  l1EGCand = cms.InputTag('hltL1IsoRecoEcalCandidate')
 )
