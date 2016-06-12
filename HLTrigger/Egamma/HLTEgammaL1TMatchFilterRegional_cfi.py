@@ -8,7 +8,6 @@ HLTEgammaL1TMatchFilterRegional = cms.EDFilter('HLTEgammaL1TMatchFilterRegional'
   l1NonIsolatedTag = cms.InputTag('l1extraParticles', 'NonIsolated'),
   L1SeedFilterTag = cms.InputTag('theL1SeedFilter'),
   l1CenJetsTag = cms.InputTag('hltCaloStage2Digis'),
-  l1TausTag = cms.InputTag('hltCaloStage2Digis', 'Tau'),
   ncandcut = cms.int32(1),
   doIsolated = cms.bool(True),
   region_eta_size = cms.double(0.522),
