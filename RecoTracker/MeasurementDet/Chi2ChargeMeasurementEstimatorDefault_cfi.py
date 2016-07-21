@@ -6,6 +6,7 @@ Chi2ChargeMeasurementEstimatorDefault = cms.ESProducer('Chi2ChargeMeasurementEst
   MaxDisplacement = cms.double(0.5),
   MaxSagitta = cms.double(2),
   MinimalTolerance = cms.double(0.5),
+  MinPtForHitRecoveryInGluedDet = cms.double(0.9),
   ComponentName = cms.string('Chi2Charge'),
   pTChargeCutThreshold = cms.double(-1),
   clusterChargeCut = cms.PSet(
