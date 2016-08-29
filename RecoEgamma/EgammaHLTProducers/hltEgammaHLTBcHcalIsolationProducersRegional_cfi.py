@@ -12,7 +12,13 @@ hltEgammaHLTBcHcalIsolationProducersRegional = cms.EDProducer('EgammaHLTBcHcalIs
   outerCone = cms.double(0.15),
   depth = cms.int32(-1),
   doEtSum = cms.bool(False),
-  effectiveAreaBarrel = cms.double(0.021),
-  effectiveAreaEndcap = cms.double(0.04),
-  useSingleTower = cms.bool(False)
+  useSingleTower = cms.bool(False),
+  effectiveAreas = cms.vdouble(
+    0.079,
+    0.25
+  ),
+  absEtaLowEdges = cms.vdouble(
+    0,
+    1.479
+  )
 )

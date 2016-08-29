@@ -6,5 +6,6 @@ InitRootHandlers = cms.Service('InitRootHandlers',
   AutoLibraryLoader = cms.untracked.bool(True),
   LoadAllDictionaries = cms.untracked.bool(False),
   AbortOnSignal = cms.untracked.bool(True),
-  DebugLevel = cms.untracked.int32(0)
+  DebugLevel = cms.untracked.int32(0),
+  StackTracePauseTime = cms.untracked.int32(300)
 )
