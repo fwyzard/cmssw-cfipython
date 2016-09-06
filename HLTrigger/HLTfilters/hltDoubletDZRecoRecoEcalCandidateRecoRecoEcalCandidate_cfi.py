@@ -11,6 +11,7 @@ hltDoubletDZRecoRecoEcalCandidateRecoRecoEcalCandidate = cms.EDFilter('HLT2Photo
   triggerType2 = cms.int32(0),
   MinDR = cms.double(-1),
   MaxDZ = cms.double(0.2),
+  MinPixHitsForDZ = cms.int32(0),
   checkSC = cms.bool(False),
   MinN = cms.int32(1)
 )
