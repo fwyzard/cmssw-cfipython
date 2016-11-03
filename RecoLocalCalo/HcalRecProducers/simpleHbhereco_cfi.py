@@ -1,6 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 simpleHbhereco = cms.EDProducer('HcalSimpleReconstructor',
+  applyTimeSlewM3 = cms.bool(True),
   pedestalUpperLimit = cms.double(2.7),
   timeSlewParsType = cms.int32(3),
   timeSlewPars = cms.vdouble(
