@@ -3,6 +3,8 @@ import FWCore.ParameterSet.Config as cms
 DeDxEstimatorProducer = cms.EDProducer('DeDxEstimatorProducer',
   estimator = cms.string('generic'),
   tracks = cms.InputTag('generalTracks'),
+  trajectoryTrackAssociation = cms.InputTag('generalTracks'),
+  UseTrajectory = cms.bool(True),
   UsePixel = cms.bool(False),
   UseStrip = cms.bool(True),
   MeVperADCPixel = cms.double(0.00095665000000000008),

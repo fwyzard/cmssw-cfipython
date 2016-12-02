@@ -12,13 +12,8 @@ DuplicateTrackMerger = cms.EDProducer('DuplicateTrackMerger',
   maxDdsz = cms.double(10),
   maxDdxy = cms.double(10),
   maxDQoP = cms.double(0.25),
-  overlapCheckMaxHits = cms.uint32(4),
-  overlapCheckMaxMissingLayers = cms.uint32(1),
-  overlapCheckMinCosT = cms.double(0.99),
   forestLabel = cms.string('MVADuplicate'),
   GBRForestFileName = cms.string(''),
   useInnermostState = cms.bool(True),
-  ttrhBuilderName = cms.string('WithAngleAndTemplate'),
-  propagatorName = cms.string('PropagatorWithMaterial'),
-  chi2EstimatorName = cms.string('DuplicateTrackMergerChi2Est')
+  ttrhBuilderName = cms.string('WithAngleAndTemplate')
 )
