@@ -68,6 +68,12 @@ ecalDrivenElectronSeeds = cms.EDProducer('ElectronSeedProducer',
     hOverEHFMinE = cms.double(0.8),
     DeltaPhi2B = cms.double(0.008),
     PhiMin2B = cms.double(-0.002),
+    allowHGCal = cms.bool(False),
+    HGCalConfig = cms.PSet(
+      HGCEEInput = cms.InputTag('HGCalRecHit', 'HGCEERecHits'),
+      HGCFHInput = cms.InputTag('HGCalRecHit', 'HGCHEFRecHits'),
+      HGCBHInput = cms.InputTag('HGCalRecHit', 'HGCHEBRecHits')
+    ),
     SeedCreatorPSet = cms.PSet(
       ComponentName = cms.string('SeedFromConsecutiveHitsCreator'),
       propagator = cms.string('PropagatorWithMaterial'),
