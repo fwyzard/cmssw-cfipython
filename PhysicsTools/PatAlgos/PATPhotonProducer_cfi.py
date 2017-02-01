@@ -26,10 +26,18 @@ PATPhotonProducer = cms.EDProducer('PATPhotonProducer',
   efficiencies = cms.PSet(),
   addEfficiencies = cms.bool(False),
   userData = cms.PSet(
-    userClasses = cms.PSet(),
-    userFloats = cms.PSet(),
-    userInts = cms.PSet(),
-    userCands = cms.PSet(),
+    userClasses = cms.PSet(
+      labelPostfixesToStrip = cms.vstring()
+    ),
+    userFloats = cms.PSet(
+      labelPostfixesToStrip = cms.vstring()
+    ),
+    userInts = cms.PSet(
+      labelPostfixesToStrip = cms.vstring()
+    ),
+    userCands = cms.PSet(
+      labelPostfixesToStrip = cms.vstring()
+    ),
     userFunctions = cms.vstring(),
     userFunctionLabels = cms.vstring()
   ),
