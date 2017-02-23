@@ -9,6 +9,7 @@ caHitQuadrupletEDProducer = cms.EDProducer('CAHitQuadrupletEDProducer',
   CAThetaCut = cms.double(0.00125),
   CAPhiCut = cms.double(10),
   CAHardPtCut = cms.double(0),
+  CAOnlyOneLastHitPerLayerFilter = cms.bool(False),
   maxChi2 = cms.PSet(
     pt1 = cms.double(0.2),
     pt2 = cms.double(1.5),
