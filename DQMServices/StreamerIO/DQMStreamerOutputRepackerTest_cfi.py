@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-streamerOutput = cms.OutputModule('DQMStreamerOutputModuleTest',
+DQMStreamerOutputRepackerTest = cms.OutputModule('DQMStreamerOutputRepackerTest',
   max_event_size = cms.untracked.int32(7000000),
   use_compression = cms.untracked.bool(True),
   compression_level = cms.untracked.int32(1),

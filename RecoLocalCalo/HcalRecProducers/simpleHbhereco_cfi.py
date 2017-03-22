@@ -15,5 +15,5 @@ simpleHbhereco = cms.EDProducer('HcalSimpleReconstructor',
     -2.19142,
     0
   ),
-  respCorrM3 = cms.double(0.95)
+  respCorrM3 = cms.double(1)
 )

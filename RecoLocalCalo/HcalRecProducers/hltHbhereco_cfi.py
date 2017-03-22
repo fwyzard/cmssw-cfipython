@@ -15,5 +15,5 @@ hltHbhereco = cms.EDProducer('HcalHitReconstructor',
     -2.19142,
     0
   ),
-  respCorrM3 = cms.double(0.95)
+  respCorrM3 = cms.double(1)
 )
