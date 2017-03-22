@@ -13,6 +13,18 @@ trackingNtuple = cms.EDAnalyzer('TrackingNtuple',
     'seedTracksmuonSeededSeedsInOut',
     'seedTracksmuonSeededSeedsOutIn'
   ),
+  trackCandidates = cms.untracked.VInputTag(
+    'initialStepTrackCandidates',
+    'detachedTripletStepTrackCandidates',
+    'pixelPairStepTrackCandidates',
+    'lowPtTripletStepTrackCandidates',
+    'mixedTripletStepTrackCandidates',
+    'pixelLessStepTrackCandidates',
+    'tobTecStepTrackCandidates',
+    'jetCoreRegionalStepTrackCandidates',
+    'muonSeededTrackCandidatesInOut',
+    'muonSeededTrackCandidatesOutIn'
+  ),
   tracks = cms.untracked.InputTag('generalTracks'),
   trackingParticles = cms.untracked.InputTag('mix', 'MergedTrackTruth'),
   trackingParticlesRef = cms.untracked.bool(False),

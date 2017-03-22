@@ -1,11 +1,22 @@
 import FWCore.ParameterSet.Config as cms
 
 FastTimerService = cms.Service('FastTimerService',
-  printEventSummary = cms.untracked.bool(False),
-  printRunSummary = cms.untracked.bool(True),
-  printJobSummary = cms.untracked.bool(True),
+  useRealTimeClock = cms.untracked.bool(True),
+  enableTimingPaths = cms.untracked.bool(True),
+  enableTimingModules = cms.untracked.bool(True),
+  enableTimingExclusive = cms.untracked.bool(False),
+  enableTimingSummary = cms.untracked.bool(False),
+  skipFirstPath = cms.untracked.bool(False),
   enableDQM = cms.untracked.bool(True),
+  enableDQMbyPathActive = cms.untracked.bool(False),
+  enableDQMbyPathTotal = cms.untracked.bool(True),
+  enableDQMbyPathOverhead = cms.untracked.bool(False),
+  enableDQMbyPathDetails = cms.untracked.bool(False),
+  enableDQMbyPathCounters = cms.untracked.bool(True),
+  enableDQMbyPathExclusive = cms.untracked.bool(False),
   enableDQMbyModule = cms.untracked.bool(False),
+  enableDQMbyModuleType = cms.untracked.bool(False),
+  enableDQMSummary = cms.untracked.bool(False),
   enableDQMbyLumiSection = cms.untracked.bool(False),
   enableDQMbyProcesses = cms.untracked.bool(False),
   dqmTimeRange = cms.untracked.double(1000),
@@ -15,7 +26,5 @@ FastTimerService = cms.Service('FastTimerService',
   dqmModuleTimeRange = cms.untracked.double(40),
   dqmModuleTimeResolution = cms.untracked.double(0.2),
   dqmLumiSectionsRange = cms.untracked.uint32(2500),
-  dqmPath = cms.untracked.string('HLT/TimerService'),
-  highlightModules = cms.untracked.VPSet(
-  )
+  dqmPath = cms.untracked.string('HLT/TimerService')
 )
