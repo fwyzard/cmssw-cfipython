@@ -6,5 +6,7 @@ DQMStreamerOutputRepackerTest = cms.OutputModule('DQMStreamerOutputRepackerTest'
   compression_level = cms.untracked.int32(1),
   lumiSection_interval = cms.untracked.int32(0),
   outputCommands = cms.untracked.vstring('keep *'),
-  SelectEvents = cms.untracked.PSet()
+  SelectEvents = cms.untracked.PSet(),
+  outputPath = cms.untracked.string('./output/'),
+  streamLabel = cms.untracked.string('DQM')
 )
