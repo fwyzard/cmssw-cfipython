@@ -22,5 +22,6 @@ hltMuonTrimuonL3Filter = cms.EDFilter('HLTMuonTrimuonL3Filter',
   MaxPtBalance = cms.double(999999),
   NSigmaPt = cms.double(0),
   MaxDCAMuMu = cms.double(99999.9),
-  MaxRapidityTriplet = cms.double(999999)
+  MaxRapidityTriplet = cms.double(999999),
+  InputLinks = cms.InputTag('')
 )

@@ -20,7 +20,7 @@ bphMonitoring = cms.EDAnalyzer('BPHMonitor',
     hltPaths = cms.vstring(),
     hltDBKey = cms.string(''),
     errorReplyHlt = cms.bool(False),
-    verbosityLevel = cms.uint32(1)
+    verbosityLevel = cms.uint32(0)
   ),
   denGenericTriggerEventPSet = cms.PSet(
     dcsInputTag = cms.InputTag('scalersRawToDigi'),
@@ -33,7 +33,7 @@ bphMonitoring = cms.EDAnalyzer('BPHMonitor',
     hltPaths = cms.vstring(),
     hltDBKey = cms.string(''),
     errorReplyHlt = cms.bool(False),
-    verbosityLevel = cms.uint32(1)
+    verbosityLevel = cms.uint32(0)
   ),
   histoPSet = cms.PSet(
     d0PSet = cms.PSet(),
