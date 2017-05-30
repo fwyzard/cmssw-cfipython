@@ -10,9 +10,9 @@ trackingRegionsFromSuperClusters = cms.EDProducer('TrackingRegionsFromSuperClust
     useZInVertex = cms.bool(False),
     precise = cms.bool(True),
     whereToUseMeasTracker = cms.string('kNever'),
-    beamSpot = cms.InputTag(''),
+    beamSpot = cms.InputTag('hltOnlineBeamSpot'),
     vertices = cms.InputTag(''),
-    superClusters = cms.VInputTag(),
+    superClusters = cms.VInputTag('hltEgammaSuperClustersToPixelMatch'),
     measurementTrackerEvent = cms.InputTag('')
   )
 )

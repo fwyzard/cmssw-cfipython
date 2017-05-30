@@ -1,10 +1,11 @@
 import FWCore.ParameterSet.Config as cms
 
 electronNHitSeedProducer = cms.EDProducer('ElectronNHitSeedProducer',
-  initialSeeds = cms.InputTag(''),
+  initialSeeds = cms.InputTag('hltElePixelSeedsCombined'),
   vertices = cms.InputTag(''),
-  beamSpot = cms.InputTag(''),
-  measTkEvt = cms.InputTag(''),
+  beamSpot = cms.InputTag('hltOnlineBeamSpot'),
+  measTkEvt = cms.InputTag('hltSiStripClusters'),
+  superClusters = cms.VInputTag('hltEgammaSuperClustersToPixelMatch'),
   matcherConfig = cms.PSet(
     useRecoVertex = cms.bool(False),
     navSchool = cms.string('SimpleNavigationSchool'),
@@ -13,6 +14,50 @@ electronNHitSeedProducer = cms.EDProducer('ElectronNHitSeedProducer',
     minNrHits = cms.vuint32(
       2,
       3
+    ),
+    matchingCuts = cms.VPSet(
+      cms.PSet(
+        dPhiMax = cms.double(0.04),
+        dRZMax = cms.double(0.09),
+        dRZMaxLowEt = cms.vdouble(
+          0.09,
+          0.09,
+          0.09
+        ),
+        dRZMaxLowEtEtaBins = cms.vdouble(
+          1,
+          1.5
+        ),
+        dRZMaxLowEtThres = cms.double(0.09)
+      ),
+      cms.PSet(
+        dPhiMax = cms.double(0.04),
+        dRZMax = cms.double(0.09),
+        dRZMaxLowEt = cms.vdouble(
+          0.09,
+          0.09,
+          0.09
+        ),
+        dRZMaxLowEtEtaBins = cms.vdouble(
+          1,
+          1.5
+        ),
+        dRZMaxLowEtThres = cms.double(0.09)
+      ),
+      cms.PSet(
+        dPhiMax = cms.double(0.04),
+        dRZMax = cms.double(0.09),
+        dRZMaxLowEt = cms.vdouble(
+          0.09,
+          0.09,
+          0.09
+        ),
+        dRZMaxLowEtEtaBins = cms.vdouble(
+          1,
+          1.5
+        ),
+        dRZMaxLowEtThres = cms.double(0.09)
+      )
     )
   )
 )
