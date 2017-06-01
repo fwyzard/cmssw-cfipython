@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-fastTimerServiceClient = cms.EDAnalyzer('FastTimerServiceClient',
+fastTimerServiceClient = cms.EDProducer('FastTimerServiceClient',
   dqmPath = cms.untracked.string('HLT/TimerService'),
   doPlotsVsScalLumi = cms.bool(True),
   doPlotsVsPixelLumi = cms.bool(False),

@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-dqmCorrelationClient = cms.EDAnalyzer('DQMCorrelationClient',
+dqmCorrelationClient = cms.EDProducer('DQMCorrelationClient',
   me1onX = cms.bool(True),
   me = cms.PSet(
     doXaxis = cms.bool(True),

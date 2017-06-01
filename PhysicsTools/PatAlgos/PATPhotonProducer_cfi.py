@@ -43,5 +43,6 @@ PATPhotonProducer = cms.EDProducer('PATPhotonProducer',
     userFunctionLabels = cms.vstring()
   ),
   userIsolation = cms.PSet(),
-  beamLineSrc = cms.InputTag('')
+  beamLineSrc = cms.InputTag(''),
+  saveRegressionData = cms.bool(True)
 )
