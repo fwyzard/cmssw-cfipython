@@ -41,5 +41,8 @@ particleFlowSuperClusterECALMustache = cms.EDProducer('PFECALSuperClusterProduce
   phiwidth_SuperClusterBarrel = cms.double(0.6),
   thresh_PFClusterES = cms.double(0),
   seedThresholdIsET = cms.bool(True),
+  isOOTCollection = cms.bool(False),
+  barrelRecHits = cms.InputTag('ecalRecHit', 'EcalRecHitsEE'),
+  endcapRecHits = cms.InputTag('ecalRecHit', 'EcalRecHitsEB'),
   PFSuperClusterCollectionEndcapWithPreshower = cms.string('particleFlowSuperClusterECALEndcapWithPreshower')
 )
