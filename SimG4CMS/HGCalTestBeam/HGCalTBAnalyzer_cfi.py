@@ -43,10 +43,16 @@ HGCalTBAnalyzer = cms.EDAnalyzer('HGCalTBAnalyzer',
     2005
   ),
   GeneratorSrc = cms.InputTag('generatorSmeared'),
+  HGCPassiveEE = cms.InputTag('g4SimHits', 'HGCalEEPassiveHits'),
+  HGCPassiveFH = cms.InputTag('g4SimHits', 'HGCalHEPassiveHits'),
+  HGCPassiveBH = cms.InputTag('g4SimHits', 'HGCalAHPassiveHits'),
   DoSimHits = cms.bool(True),
   DoDigis = cms.bool(True),
   DoRecHits = cms.bool(True),
   SampleIndex = cms.int32(0),
   DoTree = cms.untracked.bool(True),
-  DoTreeCell = cms.untracked.bool(True)
+  DoTreeCell = cms.untracked.bool(True),
+  DoPassiveEE = cms.untracked.bool(False),
+  DoPassiveFH = cms.untracked.bool(False),
+  DoPassiveBH = cms.untracked.bool(False)
 )
