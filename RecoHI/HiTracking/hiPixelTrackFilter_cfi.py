@@ -2,7 +2,7 @@ import FWCore.ParameterSet.Config as cms
 
 hiPixelTrackFilter = cms.EDProducer('HIPixelTrackFilterProducer',
   clusterShapeCacheSrc = cms.InputTag('siPixelClusterShapeCache'),
-  VertexCollection = cms.InputTag('hiSelectedVertex'),
+  VertexCollection = cms.InputTag('hiSelectedPixelVertex'),
   ptMin = cms.double(1.5),
   ptMax = cms.double(999999),
   tipMax = cms.double(0),

@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-pixelTrackFilterByKinematicsDefault = cms.EDProducer('PixelTrackFilterByKinematicsProducer',
+pixelTrackFilterByKinematics = cms.EDProducer('PixelTrackFilterByKinematicsProducer',
   ptMin = cms.double(0.1),
   nSigmaInvPtTolerance = cms.double(0),
   tipMax = cms.double(1),

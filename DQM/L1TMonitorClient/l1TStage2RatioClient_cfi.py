@@ -7,5 +7,6 @@ l1TStage2RatioClient = cms.EDProducer('L1TStage2RatioClient',
   ratioName = cms.untracked.string('ratio'),
   ratioTitle = cms.untracked.string('ratio'),
   yAxisTitle = cms.untracked.string(''),
-  binomialErr = cms.untracked.bool(True)
+  binomialErr = cms.untracked.bool(True),
+  ignoreBin = cms.untracked.vint32()
 )

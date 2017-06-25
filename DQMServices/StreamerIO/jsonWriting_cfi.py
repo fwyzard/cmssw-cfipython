@@ -16,6 +16,8 @@ jsonWriting = cms.OutputModule('JsonWritingTimeoutPoolOutputModule',
   writeStatusFile = cms.untracked.bool(False),
   dropMetaData = cms.untracked.string(''),
   dataset = cms.untracked.PSet(),
+  overrideBranchesSplitLevel = cms.untracked.VPSet(
+  ),
   outputCommands = cms.untracked.vstring('keep *'),
   SelectEvents = cms.untracked.PSet(),
   runNumber = cms.untracked.uint32(0),
