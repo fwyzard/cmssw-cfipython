@@ -5,8 +5,6 @@ hltMuonDimuonL3Filter = cms.EDFilter('HLTMuonDimuonL3Filter',
   BeamSpotTag = cms.InputTag('hltOfflineBeamSpot'),
   CandTag = cms.InputTag('hltL3MuonCandidates'),
   PreviousCandTag = cms.InputTag(''),
-  L1CandTag = cms.InputTag(''),
-  inputMuonCollection = cms.InputTag(''),
   PreviousCandIsL2 = cms.bool(True),
   FastAccept = cms.bool(False),
   MinN = cms.int32(1),
@@ -30,7 +28,5 @@ hltMuonDimuonL3Filter = cms.EDFilter('HLTMuonDimuonL3Filter',
   MaxDCAMuMu = cms.double(99999.9),
   MaxRapidityPair = cms.double(999999),
   CutCowboys = cms.bool(False),
-  InputLinks = cms.InputTag(''),
-  L1MatchingdR = cms.double(0.3),
-  MatchToPreviousCand = cms.bool(True)
+  InputLinks = cms.InputTag('')
 )

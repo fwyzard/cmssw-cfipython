@@ -11,7 +11,6 @@ lumiMonitor = cms.EDAnalyzer('LumiMonitor',
   histoPSet = cms.PSet(
     pixelClusterPSet = cms.PSet(),
     lumiPSet = cms.PSet(),
-    puPSet = cms.PSet(),
     pixellumiPSet = cms.PSet(),
     lsPSet = cms.PSet(
       nbins = cms.int32(2500)

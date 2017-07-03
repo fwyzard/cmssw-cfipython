@@ -26,6 +26,5 @@ TSGForOI = cms.EDProducer('TSGForOI',
   SF3 = cms.double(5),
   SF4 = cms.double(7),
   SF5 = cms.double(10),
-  tsosDiff = cms.double(0.03),
-  propagatorName = cms.string('PropagatorWithMaterial')
+  tsosDiff = cms.double(0.03)
 )

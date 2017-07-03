@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-VirtualJetProducer = cms.EDProducer('CMSInsideOutJetProducer',
+VirtualJetProducer = cms.EDProducer('SubjetFilterJetProducer',
   src = cms.InputTag('particleFlow'),
   srcPVs = cms.InputTag(''),
   jetType = cms.string('PFJet'),
@@ -27,7 +27,6 @@ VirtualJetProducer = cms.EDProducer('CMSInsideOutJetProducer',
   restrictInputs = cms.bool(False),
   maxInputs = cms.uint32(1),
   writeCompound = cms.bool(False),
-  writeJetsWithConst = cms.bool(False),
   doFastJetNonUniform = cms.bool(False),
   useDeterministicSeed = cms.bool(False),
   minSeed = cms.uint32(14327),

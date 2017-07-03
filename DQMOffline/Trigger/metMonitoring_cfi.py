@@ -6,14 +6,13 @@ metMonitoring = cms.EDAnalyzer('METMonitor',
   jets = cms.InputTag('ak4PFJetsCHS'),
   electrons = cms.InputTag('gedGsfElectrons'),
   muons = cms.InputTag('muons'),
-  vertices = cms.InputTag('offlinePrimaryVertices'),
   metSelection = cms.string('pt > 0'),
   jetSelection = cms.string('pt > 0'),
   eleSelection = cms.string('pt > 0'),
   muoSelection = cms.string('pt > 0'),
-  njets = cms.uint32(0),
-  nelectrons = cms.uint32(0),
-  nmuons = cms.uint32(0),
+  njets = cms.int32(0),
+  nelectrons = cms.int32(0),
+  nmuons = cms.int32(0),
   numGenericTriggerEventPSet = cms.PSet(
     dcsInputTag = cms.InputTag('scalersRawToDigi'),
     dcsPartitions = cms.vint32(),
@@ -71,9 +70,7 @@ metMonitoring = cms.EDAnalyzer('METMonitor',
       1000
     ),
     lsPSet = cms.PSet(
-      nbins = cms.uint32(2500),
-      xmin = cms.double(0),
-      xmax = cms.double(2500)
+      nbins = cms.int32(2500)
     )
   )
 )

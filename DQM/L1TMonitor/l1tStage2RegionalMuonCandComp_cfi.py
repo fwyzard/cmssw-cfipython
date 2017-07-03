@@ -6,6 +6,5 @@ l1tStage2RegionalMuonCandComp = cms.EDAnalyzer('L1TStage2RegionalMuonCandComp',
   regionalMuonCollection2Title = cms.untracked.string('Regional muon collection 2'),
   summaryTitle = cms.untracked.string('Summary'),
   ignoreBadTrackAddress = cms.untracked.bool(False),
-  ignoreBin = cms.untracked.vint32(),
   verbose = cms.untracked.bool(False)
 )

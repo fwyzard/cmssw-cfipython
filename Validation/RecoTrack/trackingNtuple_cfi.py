@@ -26,6 +26,7 @@ trackingNtuple = cms.EDAnalyzer('TrackingNtuple',
     'muonSeededTrackCandidatesOutIn'
   ),
   tracks = cms.untracked.InputTag('generalTracks'),
+  trackMVAs = cms.untracked.vstring('generalTracks'),
   trackingParticles = cms.untracked.InputTag('mix', 'MergedTrackTruth'),
   trackingParticlesRef = cms.untracked.bool(False),
   clusterTPMap = cms.untracked.InputTag('tpClusterProducer'),
@@ -48,5 +49,7 @@ trackingNtuple = cms.EDAnalyzer('TrackingNtuple',
   TTRHBuilder = cms.untracked.string('WithTrackAngle'),
   parametersDefiner = cms.untracked.string('LhcParametersDefinerForTP'),
   includeSeeds = cms.untracked.bool(False),
-  includeAllHits = cms.untracked.bool(False)
+  includeAllHits = cms.untracked.bool(False),
+  includeMVA = cms.untracked.bool(True),
+  includeTrackingParticles = cms.untracked.bool(True)
 )

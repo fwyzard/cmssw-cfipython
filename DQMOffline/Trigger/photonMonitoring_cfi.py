@@ -69,38 +69,8 @@ photonMonitoring = cms.EDAnalyzer('PhotonMonitor',
       450,
       1000
     ),
-    massBinning = cms.vdouble(
-      90,
-      91,
-      92,
-      93,
-      94,
-      95,
-      96,
-      97,
-      98,
-      99,
-      100,
-      101,
-      102,
-      103,
-      104,
-      105,
-      106,
-      107,
-      108,
-      109,
-      110,
-      115,
-      120,
-      130,
-      150,
-      200
-    ),
     lsPSet = cms.PSet(
-      nbins = cms.uint32(2500),
-      xmin = cms.double(0),
-      xmax = cms.double(2500)
+      nbins = cms.uint32(2500)
     )
   )
 )
