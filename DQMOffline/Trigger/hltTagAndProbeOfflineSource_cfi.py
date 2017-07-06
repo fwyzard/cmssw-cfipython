@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-hltTagAndProbeOfflineSource = cms.EDAnalyzer('HLTEleTagAndProbeOfflineSource',
+hltTagAndProbeOfflineSource = cms.EDAnalyzer('HLTMuTagAndProbeOfflineSource',
   objs = cms.InputTag(''),
   tagAndProbeCollections = cms.VPSet(
   )
