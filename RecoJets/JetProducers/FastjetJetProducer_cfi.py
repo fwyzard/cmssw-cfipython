@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-FastjetJetProducer = cms.EDProducer('FastjetJetProducer',
+FastjetJetProducer = cms.EDProducer('HTTTopJetProducer',
   useMassDropTagger = cms.bool(False),
   useFiltering = cms.bool(False),
   useDynamicFiltering = cms.bool(False),
