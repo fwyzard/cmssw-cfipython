@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-VirtualJetProducer = cms.EDProducer('SubjetFilterJetProducer',
+VirtualJetProducer = cms.EDProducer('SubEventGenJetProducer',
   src = cms.InputTag('particleFlow'),
   srcPVs = cms.InputTag(''),
   jetType = cms.string('PFJet'),

@@ -14,6 +14,7 @@ VertexAssociatorByTracks = cms.EDProducer('VertexAssociatorByTracksProducer',
     minRapidityTP = cms.double(-2.4),
     minHitTP = cms.int32(0),
     ptMinTP = cms.double(0.9),
+    ptMaxTP = cms.double(1e+100),
     maxRapidityTP = cms.double(2.4),
     tipTP = cms.double(3.5)
   ),
