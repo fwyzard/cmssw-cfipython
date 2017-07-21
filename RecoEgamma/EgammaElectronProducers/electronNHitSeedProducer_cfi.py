@@ -28,7 +28,8 @@ electronNHitSeedProducer = cms.EDProducer('ElectronNHitSeedProducer',
           1,
           1.5
         ),
-        dRZMaxLowEtThres = cms.double(0.09)
+        dRZMaxLowEtThres = cms.double(0.09),
+        version = cms.int32(1)
       ),
       cms.PSet(
         dPhiMax = cms.double(0.04),
@@ -42,7 +43,8 @@ electronNHitSeedProducer = cms.EDProducer('ElectronNHitSeedProducer',
           1,
           1.5
         ),
-        dRZMaxLowEtThres = cms.double(0.09)
+        dRZMaxLowEtThres = cms.double(0.09),
+        version = cms.int32(1)
       ),
       cms.PSet(
         dPhiMax = cms.double(0.04),
@@ -56,7 +58,8 @@ electronNHitSeedProducer = cms.EDProducer('ElectronNHitSeedProducer',
           1,
           1.5
         ),
-        dRZMaxLowEtThres = cms.double(0.09)
+        dRZMaxLowEtThres = cms.double(0.09),
+        version = cms.int32(1)
       )
     )
   )
