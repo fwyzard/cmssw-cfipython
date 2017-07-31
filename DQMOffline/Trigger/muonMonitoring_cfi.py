@@ -1,19 +1,16 @@
 import FWCore.ParameterSet.Config as cms
 
-metMonitoring = cms.EDAnalyzer('METMonitor',
-  FolderName = cms.string('HLT/MET'),
+muonMonitoring = cms.EDAnalyzer('MuonMonitor',
+  FolderName = cms.string('HLT/Muon'),
   met = cms.InputTag('pfMet'),
-  jets = cms.InputTag('ak4PFJetsCHS'),
-  electrons = cms.InputTag('gedGsfElectrons'),
   muons = cms.InputTag('muons'),
   vertices = cms.InputTag('offlinePrimaryVertices'),
+  electrons = cms.InputTag('gedGsfElectrons'),
   metSelection = cms.string('pt > 0'),
-  jetSelection = cms.string('pt > 0'),
+  muonSelection = cms.string('pt > 6 && eta<2.4 '),
   eleSelection = cms.string('pt > 0'),
-  muoSelection = cms.string('pt > 0'),
-  njets = cms.uint32(0),
-  nelectrons = cms.uint32(0),
   nmuons = cms.uint32(0),
+  nelectrons = cms.uint32(0),
   numGenericTriggerEventPSet = cms.PSet(
     dcsInputTag = cms.InputTag('scalersRawToDigi'),
     dcsPartitions = cms.vint32(),
@@ -25,7 +22,11 @@ metMonitoring = cms.EDAnalyzer('METMonitor',
     hltPaths = cms.vstring(),
     hltDBKey = cms.string(''),
     errorReplyHlt = cms.bool(False),
-    verbosityLevel = cms.uint32(1)
+    errorReplyL1 = cms.bool(False),
+    verbosityLevel = cms.uint32(1),
+    andOrL1 = cms.bool(False),
+    l1BeforeMask = cms.bool(False),
+    l1Algorithms = cms.vstring()
   ),
   denGenericTriggerEventPSet = cms.PSet(
     dcsInputTag = cms.InputTag('scalersRawToDigi'),
@@ -38,11 +39,15 @@ metMonitoring = cms.EDAnalyzer('METMonitor',
     hltPaths = cms.vstring(),
     hltDBKey = cms.string(''),
     errorReplyHlt = cms.bool(False),
-    verbosityLevel = cms.uint32(1)
+    errorReplyL1 = cms.bool(False),
+    verbosityLevel = cms.uint32(1),
+    andOrL1 = cms.bool(False),
+    l1BeforeMask = cms.bool(False),
+    l1Algorithms = cms.vstring()
   ),
   histoPSet = cms.PSet(
-    metPSet = cms.PSet(),
-    metBinning = cms.vdouble(
+    muonPSet = cms.PSet(),
+    muonBinning = cms.vdouble(
       0,
       20,
       40,
@@ -70,8 +75,73 @@ metMonitoring = cms.EDAnalyzer('METMonitor',
       450,
       1000
     ),
+    muonetaBinning = cms.vdouble(
+      -3,
+      -2.5,
+      -2,
+      -1.5,
+      -1,
+      -0.5,
+      0,
+      0.5,
+      1,
+      1.5,
+      2,
+      2.5,
+      3
+    ),
+    elePtBinning2D = cms.vdouble(
+      0,
+      40,
+      80,
+      100,
+      120,
+      140,
+      160,
+      180,
+      200,
+      240,
+      280,
+      350,
+      450,
+      1000
+    ),
+    muPtBinning2D = cms.vdouble(
+      0,
+      40,
+      80,
+      100,
+      120,
+      140,
+      160,
+      180,
+      200,
+      240,
+      280,
+      350,
+      450,
+      1000
+    ),
+    eleEtaBinning2D = cms.vdouble(
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3
+    ),
+    muEtaBinning2D = cms.vdouble(
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3
+    ),
     lsPSet = cms.PSet(
-      nbins = cms.uint32(2500)
+      nbins = cms.int32(2500)
     )
   )
 )

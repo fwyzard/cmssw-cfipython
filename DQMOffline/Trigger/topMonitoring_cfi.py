@@ -19,10 +19,17 @@ topMonitoring = cms.EDAnalyzer('TopMonitor',
   nelectrons = cms.uint32(0),
   nmuons = cms.uint32(0),
   leptJetDeltaRmin = cms.double(0),
+  bJetMuDeltaRmax = cms.double(9999),
+  bJetDeltaEtaMax = cms.double(9999),
   HTcut = cms.double(0),
   nbjets = cms.uint32(0),
   workingpoint = cms.double(0.8484),
   applyleptonPVcuts = cms.bool(False),
+  invMassUppercut = cms.double(-1),
+  invMassLowercut = cms.double(-1),
+  oppositeSignMuons = cms.bool(False),
+  MHTdefinition = cms.string('pt > 0'),
+  MHTcut = cms.double(-1),
   numGenericTriggerEventPSet = cms.PSet(
     dcsInputTag = cms.InputTag('scalersRawToDigi'),
     dcsPartitions = cms.vint32(),
@@ -50,13 +57,51 @@ topMonitoring = cms.EDAnalyzer('TopMonitor',
     verbosityLevel = cms.uint32(1)
   ),
   histoPSet = cms.PSet(
-    metPSet = cms.PSet(),
-    etaPSet = cms.PSet(),
-    phiPSet = cms.PSet(),
-    ptPSet = cms.PSet(),
-    htPSet = cms.PSet(),
-    DRPSet = cms.PSet(),
-    csvPSet = cms.PSet(),
+    metPSet = cms.PSet(
+      nbins = cms.uint32(40),
+      xmin = cms.double(0),
+      xmax = cms.double(100)
+    ),
+    etaPSet = cms.PSet(
+      nbins = cms.uint32(40),
+      xmin = cms.double(0),
+      xmax = cms.double(100)
+    ),
+    phiPSet = cms.PSet(
+      nbins = cms.uint32(40),
+      xmin = cms.double(0),
+      xmax = cms.double(100)
+    ),
+    ptPSet = cms.PSet(
+      nbins = cms.uint32(40),
+      xmin = cms.double(0),
+      xmax = cms.double(100)
+    ),
+    htPSet = cms.PSet(
+      nbins = cms.uint32(40),
+      xmin = cms.double(0),
+      xmax = cms.double(100)
+    ),
+    DRPSet = cms.PSet(
+      nbins = cms.uint32(40),
+      xmin = cms.double(0),
+      xmax = cms.double(100)
+    ),
+    csvPSet = cms.PSet(
+      nbins = cms.uint32(40),
+      xmin = cms.double(0),
+      xmax = cms.double(100)
+    ),
+    invMassPSet = cms.PSet(
+      nbins = cms.uint32(40),
+      xmin = cms.double(0),
+      xmax = cms.double(100)
+    ),
+    MHTPSet = cms.PSet(
+      nbins = cms.uint32(40),
+      xmin = cms.double(0),
+      xmax = cms.double(100)
+    ),
     metBinning = cms.vdouble(
       0,
       20,
@@ -241,6 +286,62 @@ topMonitoring = cms.EDAnalyzer('TopMonitor',
       2,
       2.5,
       3
+    ),
+    invMassVariableBinning = cms.vdouble(
+      0,
+      20,
+      40,
+      60,
+      80,
+      90,
+      100,
+      110,
+      120,
+      130,
+      140,
+      150,
+      160,
+      170,
+      180,
+      190,
+      200,
+      220,
+      240,
+      260,
+      280,
+      300,
+      350,
+      400,
+      450,
+      1000
+    ),
+    MHTVariableBinning = cms.vdouble(
+      0,
+      20,
+      40,
+      60,
+      80,
+      90,
+      100,
+      110,
+      120,
+      130,
+      140,
+      150,
+      160,
+      170,
+      180,
+      190,
+      200,
+      220,
+      240,
+      260,
+      280,
+      300,
+      350,
+      400,
+      450,
+      1000
     ),
     HTBinning2D = cms.vdouble(
       0,

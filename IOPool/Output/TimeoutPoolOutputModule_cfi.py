@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-edmOutput = cms.OutputModule('PoolOutputModule',
+TimeoutPoolOutputModule = cms.OutputModule('TimeoutPoolOutputModule',
   logicalFileName = cms.untracked.string(''),
   catalog = cms.untracked.string(''),
   maxSize = cms.untracked.int32(2130706432),
