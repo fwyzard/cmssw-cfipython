@@ -57,51 +57,15 @@ topMonitoring = cms.EDAnalyzer('TopMonitor',
     verbosityLevel = cms.uint32(1)
   ),
   histoPSet = cms.PSet(
-    metPSet = cms.PSet(
-      nbins = cms.uint32(40),
-      xmin = cms.double(0),
-      xmax = cms.double(100)
-    ),
-    etaPSet = cms.PSet(
-      nbins = cms.uint32(40),
-      xmin = cms.double(0),
-      xmax = cms.double(100)
-    ),
-    phiPSet = cms.PSet(
-      nbins = cms.uint32(40),
-      xmin = cms.double(0),
-      xmax = cms.double(100)
-    ),
-    ptPSet = cms.PSet(
-      nbins = cms.uint32(40),
-      xmin = cms.double(0),
-      xmax = cms.double(100)
-    ),
-    htPSet = cms.PSet(
-      nbins = cms.uint32(40),
-      xmin = cms.double(0),
-      xmax = cms.double(100)
-    ),
-    DRPSet = cms.PSet(
-      nbins = cms.uint32(40),
-      xmin = cms.double(0),
-      xmax = cms.double(100)
-    ),
-    csvPSet = cms.PSet(
-      nbins = cms.uint32(40),
-      xmin = cms.double(0),
-      xmax = cms.double(100)
-    ),
-    invMassPSet = cms.PSet(
-      nbins = cms.uint32(40),
-      xmin = cms.double(0),
-      xmax = cms.double(100)
-    ),
-    MHTPSet = cms.PSet(
-      nbins = cms.uint32(40),
-      xmin = cms.double(0),
-      xmax = cms.double(100)
-    ),
+    metPSet = cms.PSet(),
+    etaPSet = cms.PSet(),
+    phiPSet = cms.PSet(),
+    ptPSet = cms.PSet(),
+    htPSet = cms.PSet(),
+    DRPSet = cms.PSet(),
+    csvPSet = cms.PSet(),
+    invMassPSet = cms.PSet(),
+    MHTPSet = cms.PSet(),
     metBinning = cms.vdouble(
       0,
       20,

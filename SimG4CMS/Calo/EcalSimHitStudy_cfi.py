@@ -6,5 +6,6 @@ EcalSimHitStudy = cms.EDAnalyzer('EcalSimHitStudy',
   EECollection = cms.untracked.string('EcalHitsEE'),
   SourceLabel = cms.untracked.string('VtxSmeared'),
   MaxEnergy = cms.untracked.double(200),
-  TimeCut = cms.untracked.double(100)
+  TimeCut = cms.untracked.double(100),
+  SelectX = cms.untracked.int32(-1)
 )
