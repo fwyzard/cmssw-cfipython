@@ -9,5 +9,6 @@ hltScoutingMuonProducer = cms.EDProducer('HLTScoutingMuonProducer',
   displacedvertexCollection = cms.InputTag('hltDisplacedmumuVtxProducerDoubleMu3NoVtx'),
   muonPtCut = cms.double(4),
   muonEtaCut = cms.double(2.4),
-  minVtxProbCut = cms.double(0.001)
+  minVtxProbCut = cms.double(0.001),
+  InputLinks = cms.InputTag('hltL3MuonsIterL3LinksNoVtx')
 )
