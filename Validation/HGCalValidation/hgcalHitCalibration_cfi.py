@@ -1,8 +1,14 @@
 import FWCore.ParameterSet.Config as cms
 
 hgcalHitCalibration = cms.EDAnalyzer('HGCalHitCalibration',
-  detector = cms.string('all'),
+  debug = cms.int32(0),
   rawRecHits = cms.bool(True),
-  cutOnPt = cms.bool(True),
-  cutValue = cms.double(10)
+  detector = cms.string('all'),
+  caloParticles = cms.InputTag('mix', 'MergedCaloTruth'),
+  recHitsEE = cms.InputTag('HGCalRecHit', 'HGCEERecHits'),
+  recHitsFH = cms.InputTag('HGCalRecHit', 'HGCHEFRecHits'),
+  recHitsBH = cms.InputTag('HGCalRecHit', 'HGCHEBRecHits'),
+  hgcalMultiClusters = cms.InputTag('particleFlowClusterHGCalFromMultiCl'),
+  electrons = cms.InputTag('ecalDrivenGsfElectronsFromMultiCl'),
+  photons = cms.InputTag('photonsFromMultiCl')
 )

@@ -44,11 +44,16 @@ HcalIsoTrkAnalyzer = cms.EDAnalyzer('HcalIsoTrkAnalyzer',
   HBHERecHitLabel = cms.string('hbhereco'),
   BeamSpotLabel = cms.string('offlineBeamSpot'),
   CaloTowerLabel = cms.string('towerMaker'),
+  AlgInputTag = cms.InputTag('gtStage2Digis'),
+  ExtInputTag = cms.InputTag('gtStage2Digis'),
   ModuleName = cms.untracked.string(''),
   ProducerName = cms.untracked.string(''),
   IgnoreTriggers = cms.untracked.bool(False),
   UseRaw = cms.untracked.bool(False),
   HcalScale = cms.untracked.double(1),
   DataType = cms.untracked.int32(0),
-  OutMode = cms.untracked.int32(11)
+  OutMode = cms.untracked.int32(11),
+  UnCorrect = cms.untracked.bool(False),
+  CollapseDepth = cms.untracked.bool(False),
+  L1TrigName = cms.untracked.string('L1_SingleJet60')
 )
