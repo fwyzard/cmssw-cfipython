@@ -76,7 +76,9 @@ objMonitoring = cms.EDAnalyzer('ObjMonitor',
     ),
     phiPSet = cms.PSet(),
     lsPSet = cms.PSet(
-      nbins = cms.uint32(2500)
+      nbins = cms.uint32(2500),
+      xmin = cms.double(0),
+      xmax = cms.double(2500)
     ),
     jetetaPSet = cms.PSet(),
     detajjPSet = cms.PSet(),
@@ -190,7 +192,9 @@ objMonitoring = cms.EDAnalyzer('ObjMonitor',
       6000
     ),
     jetlsPSet = cms.PSet(
-      nbins = cms.uint32(2500)
+      nbins = cms.uint32(2500),
+      xmin = cms.double(0),
+      xmax = cms.double(2500)
     ),
     htPSet = cms.PSet(),
     htBinning = cms.vdouble(
@@ -244,7 +248,9 @@ objMonitoring = cms.EDAnalyzer('ObjMonitor',
       1000
     ),
     htlsPSet = cms.PSet(
-      nbins = cms.uint32(2500)
+      nbins = cms.uint32(2500),
+      xmin = cms.double(0),
+      xmax = cms.double(2500)
     )
   )
 )

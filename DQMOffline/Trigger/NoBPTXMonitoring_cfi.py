@@ -66,7 +66,9 @@ NoBPTXMonitoring = cms.EDAnalyzer('NoBPTXMonitor',
       xmax = cms.double(19999.5)
     ),
     lsPSet = cms.PSet(
-      nbins = cms.uint32(2000)
+      nbins = cms.uint32(200),
+      xmin = cms.double(-0.5),
+      xmax = cms.double(19999.5)
     ),
     bxPSet = cms.PSet(
       nbins = cms.uint32(2000)

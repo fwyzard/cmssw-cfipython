@@ -5,8 +5,6 @@ TrackCutClassifier = cms.EDProducer('TrackCutClassifier',
   beamspot = cms.InputTag('offlineBeamSpot'),
   vertices = cms.InputTag('firstStepPrimaryVertices'),
   ignoreVertices = cms.bool(False),
-  GBRForestLabel = cms.string(''),
-  GBRForestFileName = cms.string(''),
   qualityCuts = cms.vdouble(
     -0.7,
     0.1,

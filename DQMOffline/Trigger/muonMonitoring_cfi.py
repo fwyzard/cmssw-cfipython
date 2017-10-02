@@ -141,7 +141,9 @@ muonMonitoring = cms.EDAnalyzer('MuonMonitor',
       3
     ),
     lsPSet = cms.PSet(
-      nbins = cms.int32(2500)
+      nbins = cms.uint32(2500),
+      xmin = cms.double(0),
+      xmax = cms.double(2500)
     )
   )
 )

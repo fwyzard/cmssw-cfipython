@@ -5,12 +5,13 @@ TrackMVAClassifierDetached = cms.EDProducer('TrackMVAClassifierDetached',
   beamspot = cms.InputTag('offlineBeamSpot'),
   vertices = cms.InputTag('firstStepPrimaryVertices'),
   ignoreVertices = cms.bool(False),
-  GBRForestLabel = cms.string(''),
-  GBRForestFileName = cms.string(''),
   qualityCuts = cms.vdouble(
     -0.7,
     0.1,
     0.7
   ),
-  mva = cms.PSet()
+  mva = cms.PSet(
+    GBRForestLabel = cms.string(''),
+    GBRForestFileName = cms.string('')
+  )
 )

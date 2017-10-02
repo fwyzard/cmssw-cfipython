@@ -18,12 +18,15 @@ hcalHBHEMuon = cms.EDAnalyzer('HcalHBHEMuonAnalyzer',
   ),
   UseRaw = cms.bool(False),
   UnCorrect = cms.bool(False),
+  GetCharge = cms.bool(False),
   CollapseDepth = cms.bool(False),
-  SaveCorrect = cms.bool(False),
+  IsItPlan1 = cms.bool(False),
   IgnoreHECorr = cms.untracked.bool(False),
   IsItPreRecHit = cms.untracked.bool(False),
   ModuleName = cms.untracked.string(''),
   ProcessName = cms.untracked.string(''),
   Verbosity = cms.untracked.int32(0),
-  MaxDepth = cms.untracked.int32(4)
+  MaxDepth = cms.untracked.int32(4),
+  FileInCorr = cms.untracked.string(''),
+  WriteRespCorr = cms.untracked.bool(False)
 )
