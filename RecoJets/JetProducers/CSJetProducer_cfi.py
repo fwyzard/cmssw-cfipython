@@ -1,6 +1,12 @@
 import FWCore.ParameterSet.Config as cms
 
-VirtualJetProducer = cms.EDProducer('SubjetFilterJetProducer',
+CSJetProducer = cms.EDProducer('CSJetProducer',
+  csRParam = cms.double(-1),
+  csAlpha = cms.double(2),
+  etaMap = cms.InputTag('hiFJRhoProducer', 'mapEtaEdges'),
+  rho = cms.InputTag('hiFJRhoProducer', 'mapToRho'),
+  rhom = cms.InputTag('hiFJRhoProducer', 'mapToRhoM'),
+  jetCollInstanceName = cms.string(''),
   src = cms.InputTag('particleFlow'),
   srcPVs = cms.InputTag(''),
   jetType = cms.string('PFJet'),
@@ -41,5 +47,5 @@ VirtualJetProducer = cms.EDProducer('SubjetFilterJetProducer',
   maxRecoveredEcalCells = cms.uint32(9999999),
   maxRecoveredHcalCells = cms.uint32(9999999),
   puCenters = cms.vdouble(),
-  jetCollInstanceName = cms.string('')
+  sumRecHits = cms.bool(False)
 )
