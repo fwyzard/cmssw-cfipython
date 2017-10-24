@@ -33,6 +33,7 @@ topMonitoring = cms.EDAnalyzer('TopMonitor',
   oppositeSignMuons = cms.bool(False),
   MHTdefinition = cms.string('pt > 0'),
   MHTcut = cms.double(-1),
+  invMassCutInAllMuPairs = cms.bool(False),
   enablePhotonPlot = cms.bool(False),
   numGenericTriggerEventPSet = cms.PSet(
     dcsInputTag = cms.InputTag('scalersRawToDigi'),
