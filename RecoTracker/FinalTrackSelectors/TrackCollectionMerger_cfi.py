@@ -8,5 +8,7 @@ TrackCollectionMerger = cms.EDProducer('TrackCollectionMerger',
   lostHitPenalty = cms.double(5),
   minShareHits = cms.uint32(2),
   allowFirstHitShare = cms.bool(True),
-  minQuality = cms.string('loose')
+  minQuality = cms.string('loose'),
+  copyExtras = cms.untracked.bool(True),
+  copyTrajectories = cms.untracked.bool(False)
 )

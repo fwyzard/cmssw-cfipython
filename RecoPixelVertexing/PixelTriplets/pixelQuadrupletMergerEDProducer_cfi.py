@@ -9,5 +9,7 @@ pixelQuadrupletMergerEDProducer = cms.EDProducer('PixelQuadrupletMergerEDProduce
   SeedComparitorPSet = cms.PSet(
     ComponentName = cms.string('none')
   ),
-  SeedCreatorPSet = cms.PSet()
+  SeedCreatorPSet = cms.PSet(
+    ComponentName = cms.string('none')
+  )
 )
